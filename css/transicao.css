@@ -1,0 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/excalibur-nouveau');
+@import url('https://fonts.cdnfonts.com/css/rubik-puddles');
+@import url('https://fonts.cdnfonts.com/css/mamba');
+@import url('https://fonts.adobe.com/fonts/gazzetta-variable');
+@import url('https://fonts.adobe.com/fonts/magno-serif-variable#details-section+magno-serif-variable-regular');
+
+/* firdevs */
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'mamba', sans-serif;
+}
+
+svg{
+  overflow: visible;
+  width: 100%;
+}
+
+#text-path{
+  fill: #54F249;
+  font-size: 3rem;
+}
