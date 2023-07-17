@@ -1,26 +1,30 @@
-@import url('https://fonts.cdnfonts.com/css/excalibur-nouveau');
-@import url('https://fonts.cdnfonts.com/css/rubik-puddles');
-@import url('https://fonts.cdnfonts.com/css/mamba');
-@import url('https://fonts.adobe.com/fonts/gazzetta-variable');
-@import url('https://fonts.adobe.com/fonts/magno-serif-variable#details-section+magno-serif-variable-regular');
+/* Estilizando a classe .scroll */
 
-/* firdevs */
 
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'mamba', sans-serif;
+/* Estilizando a classe .text-marquee */
+.text-marquee {
+  position: relative; /* Posição relativa para conter os elementos filhos absolutos */
+  display: flex; /* Exibição como flex */
+  align-items: center; /* Centralizar verticalmente os itens */
+  overflow-x: hidden; /* Ocultar conteúdo que transborda horizontalmente */
 }
 
-svg{
-  overflow: visible;
-  width: 100%;
+/* Estilizando a classe .text-single */
+.text-single {
+  position: relative; /* Posição relativa para controlar os elementos filhos absolutos */
+  white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
+  padding: 0; /* Remover o preenchimento */
+  margin: 0; /* Remover as margens */
+  will-change: transform; /* Informação de otimização para acelerar animações */
 }
 
-#text-path{
-  fill: #54F249;
-  font-size: 3rem;
+/* Estilizando a classe .text */
+.text {
+  color: #fff;
+  padding: 90px 40px; /* Remover o preenchimento */
+  font-size: 6.4rem; /* Tamanho da fonte de 6.4 rem */
+  display: inline-block; /* Exibição como inline-block (para permitir margin-right) */
+   /* Margem à direita de 2 rem */
+  font-family: arial; /* Família da fonte arial */
+  font-weight: bold; /* Peso da fonte em negrito */
 }

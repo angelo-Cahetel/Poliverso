@@ -1,0 +1,32 @@
+.projetos{
+
+}
+
+.data {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'helvetica', arial;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-principal {
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 20%;
+    
+    width: 60vw;
+    height: 40vw;
+
+    border-radius: 5%;
+    
+    
+}
