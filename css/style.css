@@ -44,6 +44,11 @@ body {
   line-height: 68px;
 }
 
+.texto-span {
+  color: #adff2f;
+  /* font-size: 60px; */
+}
+
 ul {
   margin: 0;
   padding: 0;
