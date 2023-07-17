@@ -1,10 +1,5 @@
-.projetos{
-
-}
-
-.data {
-    margin-bottom: 30px;
-    font-size: 20px;
+.projetos {
+    padding: 5vw;
     font-family: 'helvetica', arial;
     text-transform: uppercase;
     display: flex;
@@ -13,20 +8,49 @@
     flex-direction: column;
 }
 
+.data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+
+}
+
+.titulo {
+    margin-bottom: 50px;
+}
+
 .img-principal {
 
-    position: absolute;
+    position: relative;
 
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-left: 20%;
+    flex-direction: column;
     
-    width: 60vw;
-    height: 40vw;
+    width: 50vw;
+    height: 30vw;
 
     border-radius: 5%;
     
     
 }
+
+
+.img-2, .img-3, .img-4 {
+
+    position: relative;
+
+    width: 340px;
+    height: 300px;
+
+    border-radius: 5%;
+}
+
+.img-2 {
+    margin-left: 45%;
+}
+

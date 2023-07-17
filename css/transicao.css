@@ -21,7 +21,7 @@
 /* Estilizando a classe .text */
 .text {
   color: #fff;
-  padding: 90px 40px; /* Remover o preenchimento */
+  padding: 90px 48px; /* Remover o preenchimento */
   font-size: 6.4rem; /* Tamanho da fonte de 6.4 rem */
   display: inline-block; /* Exibição como inline-block (para permitir margin-right) */
    /* Margem à direita de 2 rem */

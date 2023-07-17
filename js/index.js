@@ -59,4 +59,3 @@ document.querySelector(".clip__inner").addEventListener("mouseenter", () => {
 document.querySelector(".clip__inner").addEventListener("mouseleave", () => {
   gsap.to(".cursor", .5, {scale: 0, ease: "expo.inOut"})
 })
-
