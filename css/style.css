@@ -337,7 +337,6 @@ header.flex__col {
 
 
 .texto-home {
-  padding-top: 278px;
   color: #fff;
   text-align: center;
 
@@ -365,9 +364,7 @@ header.flex__col {
   line-height: 60px;
 }
 
-.container-botao {
-  padding-top: 160px;
-}
+
 
 .botao {
    /* estilo do texto */
@@ -385,9 +382,4 @@ header.flex__col {
   cursor: pointer;
 
 
-}
-
-.botao:hover {
-  background-color: #adff2f;
-  transition: background 300ms ease-in-out;
 }
