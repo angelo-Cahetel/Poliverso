@@ -1,8 +1,8 @@
 let loops = gsap.utils.toArray('.text-single').map((line, i) => {
-  const links = line.querySelectorAll(".js-text");
+  const links = line.querySelectorAll(".imagem");
   return horizontalLoop(links, {
       repeat: -1, 
-      speed: 1 + i * 0.5,
+      speed: 0.5 + i * 0.3,
       reversed: false,
       paddingRight: parseFloat(gsap.getProperty(links[0], "marginRight", "px"))
   });
@@ -94,3 +94,4 @@ if (config.reversed) {
 }
 return tl;
 }
+

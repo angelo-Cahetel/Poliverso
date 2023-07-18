@@ -1,11 +1,11 @@
-/* Estilizando a classe .scroll */
+/* Estilizando a classe .scroll
 
 
 /* Estilizando a classe .text-marquee */
 .text-marquee {
-  position: relative; /* Posição relativa para conter os elementos filhos absolutos */
+   position: relative; /*Posição relativa para conter os elementos filhos absolutos */
   display: flex; /* Exibição como flex */
-  align-items: center; /* Centralizar verticalmente os itens */
+  align-items: center;  /* Centralizar verticalmente os itens */
   overflow-x: hidden; /* Ocultar conteúdo que transborda horizontalmente */
 }
 
@@ -15,16 +15,26 @@
   white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
   padding: 0; /* Remover o preenchimento */
   margin: 0; /* Remover as margens */
-  will-change: transform; /* Informação de otimização para acelerar animações */
+  will-change: transform; /*Informação de otimização para acelerar animações */
 }
 
 /* Estilizando a classe .text */
-.text {
+/* .text {
   color: #fff;
-  padding: 90px 48px; /* Remover o preenchimento */
-  font-size: 6.4rem; /* Tamanho da fonte de 6.4 rem */
-  display: inline-block; /* Exibição como inline-block (para permitir margin-right) */
-   /* Margem à direita de 2 rem */
-  font-family: arial; /* Família da fonte arial */
-  font-weight: bold; /* Peso da fonte em negrito */
+  width: auto;
+  padding: 90px 40px; Remover o preenchimento
+  font-size: 6.4rem; Tamanho da fonte de 6.4 rem
+  display: inline-block; Exibição como inline-block (para permitir margin-right)
+  letter-spacing: -4px;
+  font-family: 'helvetica', arial; Família da fonte arial
+   font-weight: bold; Peso da fonte em negrito
+  text-transform: lowercase;
+}  */
+
+.imagem {
+  width: 20%;
+  height: 20%;
 }
+
+
+

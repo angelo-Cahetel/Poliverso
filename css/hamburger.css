@@ -5,7 +5,7 @@
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #54F249;
+	color: #dcff3c;
 	background-color: #fff;
 	overflow: hidden;
   /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); */
@@ -56,8 +56,8 @@
   z-index: 20;
   top: 0;
   left: 0;
-  border-top: 2px solid #adff2f;
-  border-bottom: 2px solid #adff2f;
+  border-top: 2px solid #dcff3c;
+  border-bottom: 2px solid #dcff3c;
   transition: border-width 100ms 1500ms ease, 
               top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
@@ -74,7 +74,7 @@
   z-index: 20;
   top: 10px;
   right: 4px;
-  background-color: #adff2f;
+  background-color: #dcff3c;
   margin-top: -1px;
   transition: width 100ms 1750ms ease, 
               right 100ms 1750ms ease,
@@ -85,7 +85,7 @@
   top: 10px;
   transform: rotate(45deg);
   height: 2px;
-  background-color: #adff2f;
+  background-color: #dcff3c;
   border-width: 0;
   transition: border-width 100ms 340ms ease, 
               top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -201,7 +201,7 @@
 }
 .nav ul li .menu-a:hover{
   text-decoration: none;
-  color: #adff2f;
+  color: #dcff3c;
 }
 .nav ul li .menu-a:after{
   display: block;
