@@ -90,6 +90,23 @@ h1, h2, p {
     }
   }
 
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .logo-header {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    margin-right: 0;
+  }
+
   video {
     width: 120rem;
     height: 100%;
