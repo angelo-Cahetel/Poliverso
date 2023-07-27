@@ -29,8 +29,12 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #dcff3c;
+  color: #ccc;
+}
 
-#videoContainer {
+/* #videoContainer {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -39,7 +43,7 @@ a {
 #myVideo {
   width: 100%;
   height: auto;
-}
+} */
 
 
 .logo {
