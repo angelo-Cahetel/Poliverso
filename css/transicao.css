@@ -7,6 +7,7 @@
   display: flex; /* Exibição como flex */
   align-items: center;  /* Centralizar verticalmente os itens */
   overflow-x: hidden; /* Ocultar conteúdo que transborda horizontalmente */
+  top: 5rem;
 }
 
 /* Estilizando a classe .text-single */
@@ -15,7 +16,7 @@
   white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
   padding: 0; /* Remover o preenchimento */
   margin: 0; /* Remover as margens */
-  will-change: transform; /*Informação de otimização para acelerar animações */
+  will-change: contents; /*Informação de otimização para acelerar animações */
 }
 
 /* Estilizando a classe .text */

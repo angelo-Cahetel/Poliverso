@@ -14,19 +14,19 @@ introTL.to(".intro", 1, { scaleY: 0, ease:"expo.inOut"})
 introTL.to(".intro__green", 1, {scaleY: 2, ease:"expo.inOut"}, "-=1.25")
 
 // TITLE
-function separateWordsAndLetters(text) {
-  let words = text.split(/\s+|<br>/);
-  let result = "";
-  for (let i = 0; i < words.length; i++) {
-    let word = words[i];
-    result += "<div class='flex'>";
-    for (let j = 0; j < word.length; j++) {
-      result += "<span>" + word[j] + "</span>";
-    }
-    result += "</div>&nbsp;";
-  }
-  return result;
-}
+// function separateWordsAndLetters(text) {
+//   let words = text.split(/\s+|<br>/);
+//   let result = "";
+//   for (let i = 0; i < words.length; i++) {
+//     let word = words[i];
+//     result += "<div class='flex'>";
+//     for (let j = 0; j < word.length; j++) {
+//       result += "<span>" + word[j] + "</span>";
+//     }
+//     result += "</div>&nbsp;";
+//   }
+//   return result;
+// }
 
 // var clipH1 = document.querySelector(".clip h1")
 // let separatedClipH1 = separateWordsAndLetters(clipH1.innerHTML);

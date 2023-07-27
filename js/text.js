@@ -8,22 +8,6 @@ let loops = gsap.utils.toArray('.text-single').map((line, i) => {
   });
 });
 
-// let currentScroll = 0;
-// let scrollDirection = 1;
-
-// window.addEventListener("scroll", () => {
-// let direction = (window.pageYOffset > currentScroll) ? 1 : -1;
-// if (direction !== scrollDirection) {
-//     console.log("change", direction);
-//     loops.forEach(tl => {
-//         gsap.to(tl, {timeScale: direction, overwrite: true});
-//     });
-//     scrollDirection = direction;
-// }
-// currentScroll = window.pageYOffset;
-// });
-
-
 /*
 This helper function makes a group of elements animate along the x-axis in a seamless, responsive loop.
 
@@ -41,20 +25,20 @@ Features:
 function horizontalLoop(items, config) {
 items = gsap.utils.toArray(items);
 config = config || {};
-let tl = gsap.timeline({repeat: config.repeat, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
+let tl = gsap.timeline({repeat: config.repeat, paused: config.paused, defaults: {ease: "none"},onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
   length = items.length,
   startX = items[0].offsetLeft,
   times = [],
   widths = [],
   xPercents = [],
   curIndex = 0,
-  pixelsPerSecond = (config.speed || 1) * 100,
+  pixelsPerSecond = (config.speed || 0) * 100,
   snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
   totalWidth, curX, distanceToStart, distanceToLoop, item, i;
 gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
   xPercent: (i, el) => {
     let w = widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
-    xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / w * 100 + gsap.getProperty(el, "xPercent"));
+    xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / w * 75 + gsap.getProperty(el, "xPercent"));
     return xPercents[i];
   }
 });

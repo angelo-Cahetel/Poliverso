@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/projetos.css">
     <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/bolha.css">
     <title>poliverso</title>
 </head>
 <body>
- <section>
+  <div id="bolha"></div>
+  <div id="blur"></div>
+ <section class="header_container">
   <input class="menu-icon menu-body" type="checkbox" id="menu-icon" name="menu-icon"/>
   <label for="menu-icon"></label>
   <nav class="nav"> 		
     <div>
       <video src=""></video>
       <ul class="pt-5">
-        <li><a class="menu-a" href="#">Projetos</a></li>
+        <li><a class="menu-a" href="projetos.html">Projetos</a></li>
         <li><a class="menu-a" href="#">Sobre</a></li>
         <li><a class="menu-a" href="#">Contato</a></li>
       </ul>
@@ -30,22 +33,21 @@
   </nav>
  </section>
     <header class="flex__col">
-        <nav class="menu flex">
-          <a href="#" class="menu__left">
-            poliverso | films
-          </a>
-        </nav>
+        <div class="logo">
+          <a class="logo-header" href="index.html"><video class="logo-header"  src="./video/LOGO ANIMADO.mp4" autoplay loop muted></video></a>
+        </div>
         <section class="intro flex">
           <!-- Loading -->
           <div class="intro__green flex"><div>POLIVERSO</div></div>
         </section>
         <section class="clip flex">
-          <div class="clip__inner flex__col">
-            <h1 class="texto-principal">Making <span class="texto-span">difference </span>behind the <span class="texto-span">scene.</span></h1>
-            <video class="clip__bg" loop autoplay muted poster="./video/backgroundVideo.mp4">
-              <source src="./video/backgroundVideo.mp4" type="video/mp4">
-            </video>
+          <div class="clip__inner">
+            <img class="sombra" src="./img/sombra.png" alt="">
+                      <video class="clip__bg"  loop autoplay muted poster="./video/backgroundVideo.mp4">
+            <source src="./video/backgroundVideo.mp4" type="video/mp4">
+          </video>
           </div>
+          <h1 class="texto-principal">Making difference behind the scene.</h1>
         </section>
        
     </header>
@@ -89,21 +91,14 @@
 
         <section class="transicao">
           <div class="text-marquee">
-            <div class="text-single">
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso4.png" alt=""></span>
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso2.png" alt=""></span>
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso4.png" alt=""></span>
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso2.png" alt=""></span>
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso4.png" alt=""></span>
-              <span class="text js-text"><img class="imagem js-text" src="./img/Brandkit-poliverso_brandkit-poliverso2.png" alt=""></span>
-            </div>
+            <video src="./video/ESTEIRA.mp4" autoplay loop muted></video>
           </div>
         </section>
 
         <section class="texto-home">
           <div class="container-texto">
             <h1 class="conteiner_titulo titulo">sobre<br><span class="conteiner_titulo titulo-span">poli\ /erso</span></h1>
-            <p class="paragrafo">algum texto resumindo o que é a poliverso e falando da cultura laksdjlaksdjalksdjalfwpofjcflasjdofisadjflsdif</p>
+            <p class="paragrafo">algum texto resumindo o que é a poliverso e falando da cultura e explicando que apoliverso é uma agencia de filmagens</p>
            <div class="container-botao">
             <!-- <a href="#"><button class="botao">Saiba mais!</button></a> -->
            </div>
@@ -167,10 +162,12 @@
         </div>
       </footer>
 
+
       <script src="./js/img.js"></script>
       <script src="./js/text.js"></script>
       <script src="./js/index.js"></script>
       <script src="./js/projeto.js"></script>
+      <script src="./js/bolha.js"></script>
      
 </body>
 </html>

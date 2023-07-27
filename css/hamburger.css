@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 .menu-body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'helvetica', arial;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
 	color: #dcff3c;
 	background-color: #fff;
 	overflow: hidden;
-  /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg'); */
   background-position: center;
   background-repeat: repeat;
   background-size: 4%;
@@ -116,7 +115,8 @@
   z-index: 9;
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  background-color: #0F0E0E;
+  /* background: linear-gradient(to right , #FFA100, #ABFC00, #00CE85 ); */
+  background-color: #000;
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
               right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -124,6 +124,7 @@
               width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
               height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 
 @keyframes border-transform{
     0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
@@ -189,7 +190,8 @@
   transition-delay: 50ms;
 }
 .nav ul li .menu-a{
-  font-family: 'Poppins';
+  font-family: 'helvetica', arial;
+  letter-spacing: -4.5px;
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -251,6 +253,87 @@
   }
   .nav ul li .menu-a{
     font-size: 8vh;
+  }
+}
+
+.noise {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("https://www.paulrogerdev.fr/codepen/noise.png"); 
+  animation: 2s steps(1) infinite noise;
+}
+
+@keyframes noise {
+  0%, 100% {
+      background-position: 0 0;
+  }
+
+  10% {
+      background-position: -5% -10%;
+  }
+
+  20% {
+      background-position: -15% 5%;
+  }
+
+  30% {
+      background-position: 7% -25%;
+  }
+
+  40% {
+      background-position: 20% 25%;
+  }
+
+  50% {
+      background-position: -25% 10%;
+  }
+
+  60% {
+      background-position: 15% 5%;
+  }
+
+  70% {
+      background-position: 0% 15%;
+  }
+
+  80% {
+      background-position: 25% 35%;
+  }
+
+  90% {
+      background-position: -10% 10%;
+  }
+}
+
+@media (min-width: 1550px) {
+  :root {
+    --fontSizeMenu: 16px;
+    --fontSizeP: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intro__green div {
+    transform: scaleY(4);
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fontSizeMenu: 11px;
+    --fontSizeP: 11px;
+  }
+  .menu {
+    width: 90vw;
+    margin: 4vw 0;
+  }
+  .menu ul {
+    gap: 0 2vw;
   }
 }
 
