@@ -3,39 +3,14 @@
 
 /* Estilizando a classe .text-marquee */
 .text-marquee {
-   position: relative; /*Posição relativa para conter os elementos filhos absolutos */
-  display: flex; /* Exibição como flex */
-  align-items: center;  /* Centralizar verticalmente os itens */
-  overflow-x: hidden; /* Ocultar conteúdo que transborda horizontalmente */
-  top: 5rem;
+   position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 100px 0;
+  top: -55px;
 }
 
-/* Estilizando a classe .text-single */
-.text-single {
-  position: relative; /* Posição relativa para controlar os elementos filhos absolutos */
-  white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
-  padding: 0; /* Remover o preenchimento */
-  margin: 0; /* Remover as margens */
-  will-change: contents; /*Informação de otimização para acelerar animações */
-}
-
-/* Estilizando a classe .text */
-/* .text {
-  color: #fff;
-  width: auto;
-  padding: 90px 40px; Remover o preenchimento
-  font-size: 6.4rem; Tamanho da fonte de 6.4 rem
-  display: inline-block; Exibição como inline-block (para permitir margin-right)
-  letter-spacing: -4px;
-  font-family: 'helvetica', arial; Família da fonte arial
-   font-weight: bold; Peso da fonte em negrito
-  text-transform: lowercase;
-}  */
-
-.imagem {
-  width: 20%;
-  height: 20%;
-}
 
 
 

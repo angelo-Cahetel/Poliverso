@@ -22,7 +22,21 @@ body {
   background-color: #000;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+
+#videoContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#myVideo {
+  width: 100%;
+  height: auto;
+}
+
 
 .logo {
   position: relative;
@@ -304,6 +318,10 @@ ul {
 
 }
 
+.container-texto {
+  margin: 15rem 0;
+}
+
 .conteiner_titulo {
   font-family: 'helvetica', arial;
   font-weight: 400;
@@ -316,19 +334,44 @@ ul {
 .titulo-span {
   font-size: 80px;
   color: #dcff3c;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .paragrafo {
+  width: 90vw;
   font-size: 60px;
   text-align: center;
   text-transform: normal;
   line-height: 60px;
   font-family: 'helvetica', arial;
-  letter-spacing: -4px;
+  letter-spacing: -3.6px;
+  margin: 0 40px;
 }
 
 
+.coluna-esquerda {
+  position: relative;
+  
+  margin-left: -90%;
+  width: 100%;
+  height: 800px;
+  flex-shrink: 0;
+  clip-path: var(--corte);
+
+  background: linear-gradient(to top, #FFA100, #ABFC00, #00CE85 );
+}
+
+.coluna-direita {
+  position: relative;
+  
+  margin-left: 90%;
+  width: 100%;
+  height: 800px;
+  flex-shrink: 0;
+  clip-path: var(--corte);
+
+  background: linear-gradient(to top, #FFA100, #ABFC00, #00CE85 );
+}
 
 .botao {
    /* estilo do texto */
@@ -365,13 +408,13 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
   font-size: 20px;
 
 }
 
 .titulo {
-  margin-bottom: 50px;
+  margin: 0;
+  padding: 0 0 20px;
   font-size: 80px;
 }
 
