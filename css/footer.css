@@ -1,0 +1,94 @@
+.email-container {
+    display: flex;
+    align-items: center;
+    margin: 280px 80px 80px;
+  }
+  
+  .email {
+    color: #FFF;
+    font-family: 'helvetica', arial;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+  }
+  
+  .paragrafo-contato {
+    font-size: 37px;
+    letter-spacing: -2.22px;
+  }
+  
+  .email-link {
+    font-size: 60px;
+    letter-spacing: -3.6px;
+    text-decoration-line: underline;
+    color: #FFF;
+  }
+  
+  .email-link:hover {
+    color: #dcff3c;
+  }
+  
+  .localidade {
+    color: #fff;
+    font-family: 'helvetica', arial;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -2.22px;
+   
+    position: absolute;
+    right: 80px;
+  }
+  
+  .linha {
+    display: flex;
+    height: 2px;
+    margin: 0 80px 0 80px;
+    background: #FFF;
+  }
+  
+  .redes-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    flex-flow: nowrap;
+  
+  }
+  
+  
+  .frase {
+    font-family: 'helvetica', arial,;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1.38px;
+    margin: 80px;
+  }
+  
+  .redes {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-left: 50%;
+    gap: 40px;
+  
+    font-size: 23px;
+    font-family: 'helvetica', arial;
+    font-weight: 400;
+    letter-spacing: -1.38px;
+    text-decoration: underline #fff;
+    text-transform: uppercase;
+    
+  
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .link:hover {
+    color: #dcff3c;
+    text-decoration: underline #dcff3c;
+  }
+  

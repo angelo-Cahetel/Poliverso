@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
 .menu-body{
 	font-family: 'helvetica', arial;
 	font-weight: 300;
@@ -35,7 +33,7 @@
 .menu-icon:checked + label,
 .menu-icon:not(:checked) + label{
   position: fixed;
-  top: 63px;
+  top: 40px;
   right: 75px;
   display: block;
   width: 30px;
@@ -71,7 +69,7 @@
   width: 22px;
   height: 2px;
   z-index: 20;
-  top: 10px;
+  top: 12px;
   right: 4px;
   background-color: #dcff3c;
   margin-top: -1px;
@@ -105,7 +103,7 @@
 
 .nav{
   position: fixed;
-  top: 33px;
+  top: 12px;
   right: 50px;
   display: block;
   width: 80px;
