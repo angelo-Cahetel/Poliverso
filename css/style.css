@@ -34,18 +34,6 @@ a {
   color: #ccc;
 }
 
-/* #videoContainer {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#myVideo {
-  width: 100%;
-  height: auto;
-} */
-
-
 .header_container {
   padding-top: 20px;
   bottom: 20px;
@@ -53,19 +41,21 @@ a {
 }
 
 .texto-principal {
+  color: #dcff3c;
   position: absolute;
   font-family: 'helvetica', arial;
+  font-style: italic;
   text-align: center;
-  font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 60px;
 
-  z-index: 1;
-  top: 33rem;
+  z-index: 5;
+
+  top: 9rem;
   padding: 30px;
 
 }
