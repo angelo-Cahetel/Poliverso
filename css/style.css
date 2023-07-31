@@ -175,7 +175,7 @@ ul {
   position: absolute;
   top: -100px;
   left: 0;
-  width: 1740.585px;
+  width: 98%;
   height: 680px;
   object-fit: cover;
   clip-path: var(--corte);
