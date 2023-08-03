@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+
+    margin: -1rem 0 -2.2rem;
   }
   
   .logo-header {

@@ -1,7 +1,12 @@
+footer {
+  margin-top: auto;
+  height: 56vh;
+}
+
 .email-container {
     display: flex;
-    align-items: center;
-    margin: 280px 80px 80px;
+    align-items:start;
+    margin: 80px 80px;
   }
   
   .email {
@@ -13,13 +18,13 @@
   }
   
   .paragrafo-contato {
-    font-size: 37px;
-    letter-spacing: -2.22px;
+    font-size: 3vw;
+    letter-spacing: -0.2vw;
   }
   
   .email-link {
-    font-size: 60px;
-    letter-spacing: -3.6px;
+    font-size: clamp(2rem, 6vw, 10rem);
+    letter-spacing: -0.3vw;
     text-decoration-line: underline;
     color: #FFF;
   }
@@ -31,13 +36,22 @@
   .localidade {
     color: #fff;
     font-family: 'helvetica', arial;
-    font-size: 37px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: -2.22px;
+    line-height: 15px;
    
     position: absolute;
     right: 80px;
+  }
+
+  .pais {
+    font-size: 3vw;
+    letter-spacing: -0.2vw;
+  }
+
+  .estado {
+    font-size: 3vw;
+    letter-spacing: -0.2vw;
   }
   
   .linha {
@@ -67,9 +81,9 @@
   
   .redes {
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items:end;
     margin-left: 50%;
+    margin-top: 80px;
     gap: 40px;
   
     font-size: 23px;
@@ -79,16 +93,27 @@
     text-decoration: underline #fff;
     text-transform: uppercase;
     
+    position: absolute;
+    right: 80px;
   
   }
   
-  .link {
+  .instagram {
     text-decoration: none;
     color: #fff;
   }
   
-  .link:hover {
+  .instagram:hover {
     color: #dcff3c;
     text-decoration: underline #dcff3c;
   }
+
+  .linkedin {
+    text-decoration: none;
+    color: #fff;
+  }
   
+  .linkedin:hover {
+    color: #dcff3c;
+    text-decoration: underline #dcff3c;
+  }
