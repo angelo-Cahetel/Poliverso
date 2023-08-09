@@ -9,7 +9,7 @@
 }
 
 :root {
-  --font1: "Poppins";
+  --font1: 'helvetica', arial;
   --fontSizeMenu: 1vw;
   --fontSizeH1: 10vw;
   --fontSizeIntro: 3vw;
@@ -31,13 +31,7 @@ a {
 
 ::selection {
   background-color: #dcff3c;
-  color: #ccc;
-}
-
-.header_container {
-  padding-top: 20px;
-  bottom: 20px;
-
+  color: #000;
 }
 
 .texto-principal {
@@ -137,82 +131,29 @@ ul {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 90vw;
   height: 75vh;
-
-  
 }
 
-.clip .h1__stroke {
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-}
-
-.clip p {
-  position: absolute;
-  z-index: 3;
-  bottom: 20px;
-  left: 50%;
-  width: 50vw;
-  font-size: var(--fontSizeP);
-  text-align: center;
-  transform: translateX(-50%);
-}
-
-.clip p a {
-  color: #fff;
-}
-
-.sombra {
-  position: relative;
-  margin-bottom: 80px;
-  bottom: 20px;
-  z-index: 2;
+.texto-principal{
+  margin: -5vh;
 }
 
 .clip__bg {
   position: absolute;
-  top: -100px;
+  top: -13.7vh;
   left: 0;
   width: 98%;
-  height: 680px;
+  height: 79vh;
   object-fit: cover;
   clip-path: var(--corte);
   overflow: hidden;
   z-index: 3;
 }
 
-.cursor {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 6vw;
-  height: auto;
-  aspect-ratio: 10/4;
-  color: #000;
-  font-family: "Anton";
-  font-size: 1.2vw;
-  transform: translate(-50%, -50%) scale(0);
-  cursor: auto;
-  
-}
-
-.cursor::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: auto;
-}
-
 .noise {
   position: fixed;
-  z-index: 999;
+  z-index:-999;
   top: 0;
   left: 0;
   width: 100vw;
