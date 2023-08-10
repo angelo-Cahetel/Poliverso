@@ -7,71 +7,67 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CustomEase.min.js"></script>
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/contato.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Poliverso | Films</title>
 </head>
 <body>
     <body>
-        <input class="menu-icon menu-body" type="checkbox" id="menu-icon" name="menu-icon"/>
-        <label for="menu-icon"></label>
-        <nav class="nav"> 		
-          <div>
-            <video src=""></video>
-            <ul class="pt-5">
-                <li><a class="menu-a" href="index.html">Home</a></li>
-                <li><a class="menu-a" href="projetos.html">Projetos</a></li>
-              <li><a class="menu-a" href="projetos.html">Sobre</a></li>
-              <li><a class="menu-a" href="">Contato</a></li>
-            </ul>
-          </div>
-        </nav>
-        <header class="header">
-            <nav class="menu flex">
-                <a href="index.html" class="menu__left">
-                  Poliverso | Films
-                </a>
-              </nav>
-        </header>
-        <section class="hero">
-          <video class="hero-video" autoplay muted loop>
-            <source src="backgroundVideo.mp4" type="video/mp4"/>
-          </video>
-          <div class="container">
-            <div class="title-block">
-              <div class="title-h1">
-                <div class="title-row title-row-1">
-                  <div class="title-charts-cont" id="eve"><span>maki</span></div>
-                  <div class="title-charts-cont" id="ry"><span>ng</span></div>
-                  <div class="title-charts-cont" id="fo"><span></span></div>
-                  <div class="title-charts-cont" id="ssil"><span></span></div>
-                </div>
-                <div class="title-row title-row-2">
-                  <div class="title-charts-cont" id="tells"><span>dif</span></div>
-                  <div class="title-charts-cont" id="a"><span>fere</span></div>
-                  <div class="title-charts-cont" id="st"><span>nce</span></div>
-                  <div class="title-charts-cont" id="ory"><span></span></div>
-                </div>
-              </div>
-              <div class="first-desc">
-                <span class="desc-1">Conectamos ideias através do audiovisual</span>
+      <div class="noise"></div>
+      <section class="header_container">
+       <input class="menu-icon menu-body" type="checkbox" id="menu-icon" name="menu-icon"/>
+       <label for="menu-icon"></label>
+       <nav class="nav">
+         <div>
+           <ul class="pt-5">
+             <li><a class="menu-a" href="projetos.html">Projetos</a></li>
+             <li><a class="menu-a" href="#">Sobre</a></li>
+             <li><a class="menu-a" href="#">Contato</a></li>
+           </ul>
+         </div>
+       </nav>
+      </section>
+         <header class="flex__col">
+             <div class="logo">
+               <a class="logo-header" href="index.html"><video class="logo-header"  src="./video/LOGO ANIMADO.mp4" autoplay loop muted></video></a>
+             </div>       
+         </header>
+        <main>          
+            <div class="scroll"></div>
+
+            <div class="text-marquee">
+              <div class="text-single">
+                <span class="text js-text">vamos marcar um café /</span>
+                <span class="text js-text">contecte-se com a gente /</span>
+                <span class="text js-text">making a difference</span>
+                <span class="text js-text">behind the scenes /</span>
               </div>
             </div>
-        
-            <div class="copyright">
-              <span class="desc-1">desde...</span>
+
+            <div class="scroll"></div>
+        </main>  
+
+        <footer>
+          <div class="email-container">
+            <div class="email">
+              <p class="paragrafo-contato">conecte-se com a gente</p>
+              <a class="email-link" href="mailto:Poliversofilms@gmail.com">poliverso@films.com</a>
             </div>
-            <div class="book-btn">
-              <div class="book-btn__circle"></div>
-              <div class="btn-text">
-                <span class="btn-1 link">
-                   Mande sua ideia de <a href="https://www.instagram.com/poliversofilms/" style="color: greenyellow; text-decoration: none;">conteudo</a>
-                </span>
-              </div>
+            <div class="localidade">
+              <p class="pais">Brasil</p>
+              <p class="estado">Porto Alegre, RS</p>
             </div>
           </div>
-        </section>
-      </body>
+          <div class="linha"></div>
+          <div class="redes-container">
+            <p class="frase">poliverso films &copy; 2023</p>
+            <div class="redes">
+              <a class="instagram" href="https://www.instagram.com/poliversofilms/" target="_blank">Instagram</a>
+              <a class="linkedin" href="https://www.instagram.com/poliversofilms/" target="_blank">linkedin</a>
+            </div>
+          </div>
+      </footer>
+    </body>
         
         <script src="./js/contato.js"></script>
         <script src="./js/index.js"></script>
