@@ -1,6 +1,11 @@
 footer {
+<<<<<<< HEAD
+  width: 100%;
+  height: 100%;
+=======
   margin-top: auto;
   height: 56vh;
+>>>>>>> 9cd77d63816da7674868333cf0f3d7f5e22f2607
 }
 
 .email-container {

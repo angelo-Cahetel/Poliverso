@@ -1,77 +1,96 @@
-gsap.registerPlugin(CustomEase);
-
-const customEaseIn = CustomEase.create('custom-ease-in', '0.52, 0.00, 0.48, 1.00');
-const fourtyFrames = 1.3333333;
-const fiftyFrames = 1.66666;
-const twoFrames = 0.666666;
-const fourFrames = 0.133333;
-const sixFrames = 0.2;
-
-const video = document.querySelector('.hero-video');
-const header = document.querySelector('.header');
-const book = document.querySelector('.first-desc span');
-const open = document.querySelector('.second-desc span');
-const copy = document.querySelector('.copyright span');
-const scrollToRows = document.querySelectorAll('.scroll-to .scroll-to__row span');
-const btnCircle = document.querySelector('.book-btn__circle');
-const btnText = document.querySelector('.btn-text span');
-const eve = document.querySelector('#eve span');
-const ry = document.querySelector('#ry span');
-const fo = document.querySelector('#fo span');
-const ssil = document.querySelector('#ssil span');
-const tells = document.querySelector('#tells span');
-const a = document.querySelector('#a span');
-const st = document.querySelector('#st span');
-const ory = document.querySelector('#ory span');
-
-const showElements = () => {
-  const timeline = gsap.timeline();
-  timeline
-        .fromTo(btnCircle, { autoAlpha: 0 }, { autoAlpha: 1, duration: fourtyFrames, ease: customEaseIn}, 0)
-        .fromTo(btnCircle, { scale: 0.417 }, { scale: 1, duration: fourtyFrames, ease: customEaseIn}, 0)
-        .fromTo(header, {y: '-0.5rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, 0)
-        .fromTo(eve, {x: '2.7rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, 0)
-        .fromTo(book, {y: '0.5rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(fo, {x: '2.1rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(a, {x: '-1.2rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(ory, {x: '-3.2rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(open, {y: '0.3rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(btnText, {y: '0.4rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(ry, {x: '-2rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(ssil, {x: '-3.1rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(tells, {x: '4.3rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(st, {x: '1.9rem'}, { x: '0rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(copy, {y: '0.4rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, sixFrames)
-        .fromTo(scrollToRows, {y: '0.5rem'}, {y: '0rem', duration: fourtyFrames, ease: customEaseIn}, sixFrames);
-  
-  return timeline;
-}
-
-const hideElements = () => {
-  const timeline = gsap.timeline();
-  
-  timeline
-        .fromTo(copy, {y: '0rem'}, {y: '0.4rem', duration: fourtyFrames, ease: customEaseIn}, 0)
-        .fromTo(scrollToRows, {y: '0rem'}, {y: '0.5rem', duration: fourtyFrames, ease: customEaseIn}, 0)
-        .fromTo(open, {y: '0rem'}, {y: '0.3rem', duration: fourtyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(btnText, {y: '0rem'}, {y: '0.4rem', duration: fourtyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(ry, {x: '0rem'}, { x: '-2rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(ssil, {x: '0rem'}, { x: '-3.1rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(tells, {x: '0rem'}, { x: '4.3rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(st, {x: '0rem'}, { x: '1.9rem', duration: fiftyFrames, ease: customEaseIn}, twoFrames)
-        .fromTo(book, {y: '0rem'}, {y: '0.5rem', duration: fourtyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(fo, {x: '0rem'}, { x: '2.1rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(a, {x: '0rem'}, { x: '-1.2rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(ory, {x: '0rem'}, { x: '-3.2rem', duration: fiftyFrames, ease: customEaseIn}, fourFrames)
-        .fromTo(btnCircle, { autoAlpha: 1 }, { autoAlpha: 0, duration: fourtyFrames, ease: customEaseIn}, sixFrames)
-        .fromTo(btnCircle, { scale: 1 }, { scale: 0.417, duration: fourtyFrames, ease: customEaseIn}, sixFrames)
-        .fromTo(header, {y: '0rem'}, {y: '-100%', duration: fourtyFrames, ease: customEaseIn}, sixFrames)
-        .fromTo(eve, {x: '0rem'}, { x: '2.7rem', duration: fiftyFrames, ease: customEaseIn}, sixFrames);
-  
-  return timeline;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  showElements();
+let loops = gsap.utils.toArray('.text-single').map((line, i) => {
+  const links = line.querySelectorAll(".js-text");
+  return horizontalLoop(links, {
+      repeat: -1, 
+      speed: 1.5 + i * 0.5,
+      reversed: false,
+      paddingRight: parseFloat(gsap.getProperty(links[0], "marginRight", "px"))
+  });
 });
 
+let currentScroll = 0;
+let scrollDirection = 1;
+
+window.addEventListener("scroll", () => {
+let direction = (window.pageYOffset > currentScroll) ? 1 : -1;
+if (direction !== scrollDirection) {
+    console.log("change", direction);
+    loops.forEach(tl => {
+        gsap.to(tl, {timeScale: direction, overwrite: true});
+    });
+    scrollDirection = direction;
+}
+currentScroll = window.pageYOffset;
+});
+
+
+/*
+This helper function makes a group of elements animate along the x-axis in a seamless, responsive loop.
+
+Features:
+- Uses xPercent so that even if the widths change (like if the window gets resized), it should still work in most cases.
+- When each item animates to the left or right enough, it will loop back to the other side
+- Optionally pass in a config object with values like "speed" (default: 1, which travels at roughly 100 pixels per second), paused (boolean),  repeat, reversed, and paddingRight.
+- The returned timeline will have the following methods added to it:
+ - next() - animates to the next element using a timeline.tweenTo() which it returns. You can pass in a vars object to control duration, easing, etc.
+ - previous() - animates to the previous element using a timeline.tweenTo() which it returns. You can pass in a vars object to control duration, easing, etc.
+ - toIndex() - pass in a zero-based index value of the element that it should animate to, and optionally pass in a vars object to control duration, easing, etc. Always goes in the shortest direction
+ - current() - returns the current index (if an animation is in-progress, it reflects the final index)
+ - times - an Array of the times on the timeline where each element hits the "starting" spot. There's also a label added accordingly, so "label1" is when the 2nd element reaches the start.
+*/
+function horizontalLoop(items, config) {
+items = gsap.utils.toArray(items);
+config = config || {};
+let tl = gsap.timeline({repeat: config.repeat, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
+  length = items.length,
+  startX = items[0].offsetLeft,
+  times = [],
+  widths = [],
+  xPercents = [],
+  curIndex = 0,
+  pixelsPerSecond = (config.speed || 1) * 100,
+  snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+  totalWidth, curX, distanceToStart, distanceToLoop, item, i;
+gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
+  xPercent: (i, el) => {
+    let w = widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
+    xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / w * 100 + gsap.getProperty(el, "xPercent"));
+    return xPercents[i];
+  }
+});
+gsap.set(items, {x: 0});
+totalWidth = items[length-1].offsetLeft + xPercents[length-1] / 100 * widths[length-1] - startX + items[length-1].offsetWidth * gsap.getProperty(items[length-1], "scaleX") + (parseFloat(config.paddingRight) || 0);
+for (i = 0; i < length; i++) {
+  item = items[i];
+  curX = xPercents[i] / 100 * widths[i];
+  distanceToStart = item.offsetLeft + curX - startX;
+  distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+  tl.to(item, {xPercent: snap((curX - distanceToLoop) / widths[i] * 100), duration: distanceToLoop / pixelsPerSecond}, 0)
+    .fromTo(item, {xPercent: snap((curX - distanceToLoop + totalWidth) / widths[i] * 100)}, {xPercent: xPercents[i], duration: (curX - distanceToLoop + totalWidth - curX) / pixelsPerSecond, immediateRender: false}, distanceToLoop / pixelsPerSecond)
+    .add("label" + i, distanceToStart / pixelsPerSecond);
+  times[i] = distanceToStart / pixelsPerSecond;
+}
+function toIndex(index, vars) {
+  vars = vars || {};
+  (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); // always go in the shortest direction
+  let newIndex = gsap.utils.wrap(0, length, index),
+    time = times[newIndex];
+  if (time > tl.time() !== index > curIndex) { // if we're wrapping the timeline's playhead, make the proper adjustments
+    vars.modifiers = {time: gsap.utils.wrap(0, tl.duration())};
+    time += tl.duration() * (index > curIndex ? 1 : -1);
+  }
+  curIndex = newIndex;
+  vars.overwrite = true;
+  return tl.tweenTo(time, vars);
+}
+tl.next = vars => toIndex(curIndex+1, vars);
+tl.previous = vars => toIndex(curIndex-1, vars);
+tl.current = () => curIndex;
+tl.toIndex = (index, vars) => toIndex(index, vars);
+tl.times = times;
+if (config.reversed) {
+  tl.vars.onReverseComplete();
+  tl.reverse();
+}
+return tl;
+}
