@@ -10,11 +10,11 @@
 
 :root {
   --font1: 'helvetica', arial;
-  --fontSizeMenu: 1vw;
+  /* --fontSizeMenu: 1vw;
   --fontSizeH1: 10vw;
   --fontSizeIntro: 3vw;
   --fontSizeP: 1.48vw;
-  --maxWidth: 1100px;
+  --maxWidth: 1100px; */
   --corte: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
 }
 
@@ -43,14 +43,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: clamp(25px, 2.5vw, 75px);
   font-weight: 400;
-  line-height: 60px;
+  line-height: 4vh;
+  letter-spacing: -0.15vw;
 
   z-index: 5;
 
-  top: 9rem;
-  padding: 30px;
+  top: 25vh;
+  width: 90%;
 
 }
 
@@ -127,7 +128,7 @@ ul {
 }
 
 .clip {
-  margin: 120px auto;
+  margin: clamp(20px, 3vw, 21px) auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -136,13 +137,13 @@ ul {
 }
 
 .texto-principal{
-  margin: -5vh;
+  margin: -3vh;
 }
 
 .clip__bg {
   position: absolute;
   top: -13.7vh;
-  left: 0;
+  left: 1vw;
   width: 98%;
   height: 79vh;
   object-fit: cover;
@@ -153,7 +154,7 @@ ul {
 
 .noise {
   position: fixed;
-  z-index:-999;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100vw;
@@ -245,19 +246,17 @@ ul {
   margin: 15rem 0;
 }
 
-.conteiner_titulo {
+.container_titulo {
   font-family: 'helvetica', arial;
   font-weight: 400;
-  font-size: 60px;
   line-height: 78px;
+  font-size: 400px;
   letter-spacing: -4px;
   text-transform: lowercase;
 }
 
 .titulo-span {
-  font-size: 80px;
   color: #dcff3c;
-  text-transform: lowercase;
 }
 
 .paragrafo {

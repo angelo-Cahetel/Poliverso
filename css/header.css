@@ -4,15 +4,14 @@
     justify-content: center;
     align-items: baseline;
 
-    margin: -1rem 0 -2.2rem;
+    top: -2vh;
+    margin-bottom: 10vh;
   }
   
   .logo-header {
-    width: 10rem;
-    height: 5rem;
+    width: clamp(5rem, 40vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    margin-right: 0;
+    padding: 2vh;
   }
