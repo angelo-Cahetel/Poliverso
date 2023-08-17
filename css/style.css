@@ -39,18 +39,15 @@ a {
   position: absolute;
   font-family: 'helvetica', arial;
   font-style: italic;
-  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: clamp(25px, 2.5vw, 75px);
+  text-align: center;
+  font-size: clamp(30px, 2.5vw, 75px);
   font-weight: 400;
   line-height: 4vh;
   letter-spacing: -0.15vw;
 
   z-index: 5;
-
-  top: 25vh;
   width: 90%;
 
 }
@@ -128,12 +125,14 @@ ul {
 }
 
 .clip {
-  margin: clamp(20px, 3vw, 21px) auto;
+  margin: 0 auto;
   position: relative;
   display: flex;
+  top: -13.7vh;
   justify-content: center;
+  align-items: center;
   width: 90vw;
-  height: 75vh;
+  height: clamp(400px, 35vw, 800px);
 }
 
 .texto-principal{
@@ -141,11 +140,11 @@ ul {
 }
 
 .clip__bg {
-  position: absolute;
-  top: -13.7vh;
-  left: 1vw;
-  width: 98%;
-  height: 79vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 90vw;
+  height: clamp(400px, 35vw, 800px);
   object-fit: cover;
   clip-path: var(--corte);
   overflow: hidden;
@@ -237,22 +236,19 @@ ul {
 .texto-home {
   color: #fff;
   text-align: center;
-  margin: 40px;
+  margin: 0 15vw;
   z-index: 100;
 
 }
 
-.container-texto {
-  margin: 15rem 0;
-}
 
 .container_titulo {
   font-family: 'helvetica', arial;
   font-weight: 400;
-  line-height: 78px;
-  font-size: 400px;
-  letter-spacing: -4px;
+  font-size: 6vw;
+  letter-spacing: -0.3vw;
   text-transform: lowercase;
+  margin: 0;
 }
 
 .titulo-span {
@@ -260,14 +256,11 @@ ul {
 }
 
 .paragrafo {
-  width: 90vw;
-  font-size: 60px;
+  font-size: 2vw;
   text-align: center;
-  text-transform: normal;
-  line-height: 60px;
+  line-height: 2.5vw;
   font-family: 'helvetica', arial;
-  letter-spacing: -3.6px;
-  margin: 0 40px;
+  letter-spacing: -0.1vw;
 }
 
 
@@ -375,3 +368,6 @@ ul {
 
 /* FIM DOS PROJETOS */
 
+@media screen and (max-width:768px) {
+  
+}
