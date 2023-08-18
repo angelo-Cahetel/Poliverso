@@ -1,0 +1,70 @@
+body {
+  overflow-x: hidden;
+    margin: 0;
+    font-family: 'helvetica', sans-serif;
+    background: #000;
+  }
+
+  .text-marquee {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    top: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 12rem; 
+    /* rotate: -1deg;  */
+}
+
+.text-single {
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    will-change: transform;
+}
+
+.text, .text2 {
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 10rem;
+    display: inline-block;
+    margin-right: 2rem;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #dcff3c;
+}
+
+  .container {
+    display: flex;
+    margin: 3rem;
+  }
+  
+  .chamada {
+    width: 50vw;
+    color: #fff;
+    font-size: 5.94rem;
+    letter-spacing: -3px;
+    rotate: -2deg;
+    padding: 0 2rem;
+    margin-left: 12rem;
+  }
+
+    canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 30rem;
+    top: 35rem;
+  }
+
+  .texto {
+    font-family: 'helvetica', sans-serif;
+    font-size: 2.6rem;
+    color: #fff;
+    width: 50vw;
+    padding: 3rem 30rem;
+  }
+  
