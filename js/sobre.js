@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 5000);
-camera.position.z = 8;
+camera.position.z = 15;
 
 
 const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -15,7 +15,7 @@ const loader = new GLTFLoader();
 
 let object;
 
-loader.load('./3d/chair.glb', function (gltf) {
+loader.load('./3d/coin.glb', function (gltf) {
     object = gltf.scene;
     scene.add(object);
 }, undefined, function (error) {
@@ -48,7 +48,7 @@ window.addEventListener("resize", function () {
 });
 
 // Comece a renderizar a cena após o carregamento do modelo
-loader.load('./3d/chair.glb', function () {
+loader.load('./3d/coin.glb', function () {
     animate();
 }, undefined, function (error) {
     console.error(error);
