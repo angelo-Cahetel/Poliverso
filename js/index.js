@@ -1,24 +1,15 @@
 
 // INTRO
+
 window.addEventListener('load', function() {
-  var myVideo = document.getElementById('myVideo');
-  var videoContainer = document.getElementById('videoContainer');
+  // Remove a tela de loading
+  var loadingScreen = document.getElementById('loading-screen');
+  var content = document.getElementById('content');
 
-  myVideo.addEventListener('loadeddata', function() {
-      // Esconder o vídeo assim que ele carregar completamente
-      myVideo.style.display = 'none';
-
-      // Evento que é chamado quando o vídeo parar de tocar
-      myVideo.addEventListener('ended', function() {
-          // Remover o vídeo e o container quando o vídeo terminar
-          videoContainer.parentNode.removeChild(videoContainer);
-      });
-
-      // Exibir o vídeo novamente para iniciar a reprodução
-      myVideo.style.display = 'block';
-      myVideo.play();
-  });
+  loadingScreen.style.display = 'none';
+  content.classList.remove('hidden');
 });
+
 
 //CURSOR
 var cursor = document.querySelector(".cursor")
