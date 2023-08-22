@@ -109,7 +109,7 @@ h1, h2, p {
   }
 
   video {
-    width: 120rem;
+    width: 100vw;
     height: 100%;
 
     display: flex;
