@@ -288,7 +288,7 @@ ul {
 .container_titulo {
   font-family: 'helvetica', arial;
   font-weight: 400;
-  font-size: 6vw;
+  font-size: 5.5rem;
   letter-spacing: -0.3vw;
   text-transform: lowercase;
   margin: 0;
@@ -299,36 +299,11 @@ ul {
 }
 
 .paragrafo {
-  font-size: 2vw;
+  font-size: 1.8rem;
   text-align: center;
-  line-height: 2.5vw;
+  line-height: 2.4rem;
   font-family: 'helvetica', arial;
   letter-spacing: -0.1vw;
-}
-
-
-.coluna-esquerda {
-  position: relative;
-  
-  margin-left: -90%;
-  width: 100%;
-  height: 800px;
-  flex-shrink: 0;
-  clip-path: var(--corte);
-
-  background: linear-gradient(to top, #FFA100, #ABFC00, #00CE85 );
-}
-
-.coluna-direita {
-  position: relative;
-  
-  margin-left: 90%;
-  width: 100%;
-  height: 800px;
-  flex-shrink: 0;
-  clip-path: var(--corte);
-
-  background: linear-gradient(to top, #FFA100, #ABFC00, #00CE85 );
 }
 
 .botao {
@@ -349,6 +324,10 @@ ul {
 
 }
 
+.transicao {
+  margin: 12rem 0;
+}
+
 /* PROJETOS */
 
 .projetos {
@@ -366,14 +345,14 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 1.15rem;
 
 }
 
 .titulo {
   margin: 0;
   padding: 0 0 20px;
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .img-principal {
@@ -387,7 +366,7 @@ ul {
   flex-direction: column;
   
   width: 50vw;
-  height: 30vw;
+  height: 60vh;
 
   clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
   
@@ -412,5 +391,19 @@ ul {
 /* FIM DOS PROJETOS */
 
 @media screen and (max-width:768px) {
-  
+  body {
+    overflow-x: hidden;
+  }
+    .esteira-verde {
+      width: 100vh;
+    }
+
+    .titulo {
+      font-size: 3rem;
+    }
+
+    .img-principal {
+      height: 45vh;
+      width: 75vw;
+    }
 }

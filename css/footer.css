@@ -1,17 +1,12 @@
 footer {
-<<<<<<< HEAD
   width: 100%;
   height: 100%;
-=======
-  margin-top: auto;
-  height: 56vh;
->>>>>>> 9cd77d63816da7674868333cf0f3d7f5e22f2607
 }
 
 .email-container {
     display: flex;
     align-items:start;
-    margin: 80px 80px;
+    margin: 5rem;
   }
   
   .email {
@@ -19,16 +14,16 @@ footer {
     font-family: 'helvetica', arial;
     font-style: normal;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 0.93rem;
   }
   
   .paragrafo-contato {
-    font-size: 3vw;
+    font-size: 3rem;
     letter-spacing: -0.2vw;
   }
   
   .email-link {
-    font-size: clamp(2rem, 6vw, 10rem);
+    font-size: 6rem;
     letter-spacing: -0.3vw;
     text-decoration-line: underline;
     color: #FFF;
@@ -46,23 +41,23 @@ footer {
     line-height: 15px;
    
     position: absolute;
-    right: 80px;
+    right: 5rem;
   }
 
   .pais {
-    font-size: 3vw;
-    letter-spacing: -0.2vw;
+    font-size: 3.5rem;
+    letter-spacing: -0.3rem;
   }
 
   .estado {
-    font-size: 3vw;
-    letter-spacing: -0.2vw;
+    font-size: 3.5rem;
+    letter-spacing: -0.3rem;
   }
   
   .linha {
     display: flex;
-    height: 2px;
-    margin: 0 80px 0 80px;
+    height: 0.125rem;
+    margin: 0 5rem 0 5rem;
     background: #FFF;
   }
   
@@ -77,21 +72,21 @@ footer {
   
   .frase {
     font-family: 'helvetica', arial,;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 400;
     font-style: normal;
     letter-spacing: -1.38px;
-    margin: 80px;
+    margin: 5rem;
   }
   
   .redes {
     display: flex;
     align-items:end;
     margin-left: 50%;
-    margin-top: 80px;
-    gap: 40px;
+    margin-top: 5rem;
+    gap: 2.5rem;
   
-    font-size: 23px;
+    font-size: 1.43rem;
     font-family: 'helvetica', arial;
     font-weight: 400;
     letter-spacing: -1.38px;
@@ -99,7 +94,7 @@ footer {
     text-transform: uppercase;
     
     position: absolute;
-    right: 80px;
+    right: 5rem;
   
   }
   
@@ -121,4 +116,63 @@ footer {
   .linkedin:hover {
     color: #dcff3c;
     text-decoration: underline #dcff3c;
+  }
+
+  @media screen and (max-width: 768px) {
+    .email-container {
+      margin: 0;
+      display: block;
+    }
+
+    .email {
+      line-height: 1.5rem;
+      margin: 0 1.5rem;
+    }
+
+    .paragrafo-contato {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    .email-link {
+      font-size: 2rem;
+    }
+
+    .localidade {
+      right: 0;
+    }
+
+    .pais, 
+    .estado {
+      font-size: 2rem;
+      letter-spacing: 0;
+      margin: 1rem;
+    }
+
+    .linha {
+      position: relative;
+      top: 5.7rem;
+      width: 90vw;
+      margin: 0 1.5rem;
+    }
+
+    .redes-container {
+      padding-top: 2rem;
+    }
+
+    .redes {
+      display: block;
+      margin: 0;
+      padding: 5rem 0;
+      width: 50vw;
+      right: -4.5rem;
+      line-height: 1.8rem;
+    }
+
+    .frase {
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 6rem 1.5rem;
+      letter-spacing: 0;
+    }
   }
