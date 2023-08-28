@@ -5,7 +5,7 @@ footer {
 
 .email-container {
     display: flex;
-    align-items:start;
+    align-items: start;
     margin: 5rem;
   }
   
@@ -121,7 +121,8 @@ footer {
   @media screen and (max-width: 768px) {
     .email-container {
       margin: 0;
-      display: block;
+      padding-top: 3rem;
+      align-items: center;
     }
 
     .email {
@@ -130,12 +131,13 @@ footer {
     }
 
     .paragrafo-contato {
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin: 0;
     }
 
     .email-link {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      color: #dcff3c;
     }
 
     .localidade {
@@ -144,35 +146,44 @@ footer {
 
     .pais, 
     .estado {
-      font-size: 2rem;
-      letter-spacing: 0;
+      font-size: 1.3rem;
+      letter-spacing: -0.1rem;
       margin: 1rem;
+      line-height: 0.45rem;
     }
 
     .linha {
       position: relative;
-      top: 5.7rem;
+      top: 1.5rem;
       width: 90vw;
       margin: 0 1.5rem;
     }
 
     .redes-container {
-      padding-top: 2rem;
+      padding: 0;
+      align-items: start;
     }
 
     .redes {
       display: block;
       margin: 0;
-      padding: 5rem 0;
-      width: 50vw;
-      right: -4.5rem;
-      line-height: 1.8rem;
+      padding: 3.1rem 0;
+      width: 40vw;
+      right: -3rem;
+      line-height: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .frase {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 0;
-      padding: 6rem 1.5rem;
+      padding: 3.2rem 1.5rem;
       letter-spacing: 0;
+    }
+
+    .instagram,
+    .linkedin {
+      color: #dcff3c;
+      text-decoration: underline #dcff3c;
     }
   }
