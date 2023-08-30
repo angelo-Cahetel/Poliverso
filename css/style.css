@@ -480,6 +480,38 @@ ul {
       font-size: 3rem;
     }
 
+    .paragrafo {
+      margin-left: 3rem;
+    }
+
+    .adesivo {
+      width: 14vw;
+    }
+
+    .V {
+      left: 2rem;
+    }
+
+    .R {
+      left: 5rem;
+    }
+
+    .smile {
+      right: 6.5rem;
+      top: 44.2rem;
+    }
+
+    .estrela {
+      right: 3rem;
+      top: 62rem;
+    }
+
+    .makingDifference {
+      left: 3rem;
+      top: 37rem;
+      width: 30vw;
+    }
+
     .img-principal {
       height: 45vh;
       width: 75vw;
