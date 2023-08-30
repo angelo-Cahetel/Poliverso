@@ -2,6 +2,12 @@ body {
     background-color: #000;
     color: #fff;
     overflow-x: hidden;
+    margin: 0;
+}
+
+::selection {
+  background-color: #dcff3c;
+  color: #000;
 }
 
   .img-header {
@@ -18,7 +24,7 @@ body {
     letter-spacing: -0.3rem;
 
     padding-left: 5rem;
-    top: 15rem;
+    top: 25vh;
   }
 
   .texto {
@@ -77,9 +83,12 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 13rem;
+    gap: 0;
+    margin: 0;
   }
 
   .texto-off {
+    position: relative;
     color: #FFF;
     font-family: 'helvetica', arial;
     font-size: 7.8rem;
@@ -87,6 +96,8 @@ body {
     font-weight: 400;
     line-height: 7rem;
     letter-spacing: -2px;
+
+    left: 8rem;
 
     width: 48vw;
   }
@@ -96,17 +107,21 @@ body {
   }
 
   .stiker {
-    position: absolute;
-    right: 38rem;
-    top: 162rem;
+    width: 15vw;
+    height: 20vh;
+    position: relative;
+    right: -2rem;
+    top: -5rem;
     rotate: -10deg;
+    z-index: 2;
   }
 
   .story {
+    position: relative;
     width: 25vw;
     height: 90vh;
     flex-shrink: 0;
-    margin-right: 80px;
+    right: 8rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -141,6 +156,7 @@ body {
     }
 
     .texto-off {
+      position: inherit;
       font-size: 4rem;
       line-height: 3.5rem;
       margin: 0;
@@ -149,8 +165,17 @@ body {
     }
 
     .story {
-      padding: 3rem 4rem;
+      padding: 3rem 5rem;
       width: 70vw;
+      margin: 0;
+    }
+
+    .stiker {
+      width: 25vw;
+      height: 10vh;
+      right: 0;
+      left: 1rem;
+      top: 5rem;
     }
   }
 

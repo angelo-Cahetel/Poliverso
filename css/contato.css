@@ -2,6 +2,11 @@ body {
     background-color: #000;
 }
 
+::selection {
+    background-color: #dcff3c;
+    color: #000;
+  }
+
 .scroll {
     height: 25vh;
     font-size: 4rem;
@@ -15,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     overflow-x: hidden;
-    top: 5rem;
+    top: -8rem;
 }
 
 .text-single {
@@ -35,3 +40,53 @@ body {
     font-weight: bold;
     color: #dcff3c;
 }
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'helvetica', sans-serif;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    background-color: #000;
+    border-radius: 3px;
+  }
+  
+  form select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000;
+    color: #dcff3c;
+  }
+  
+  form button {
+    background-color: #dcff3c;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    width: 5vw;
+    height: 5vh;
+    font-size: 1rem;
+  }

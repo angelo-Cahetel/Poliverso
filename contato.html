@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="./img/icon.jpg" rel="shortcut icon" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CustomEase.min.js"></script>
@@ -21,8 +22,8 @@
          <div>
            <ul class="pt-5">
              <li><a class="menu-a" href="projetos.html">Projetos</a></li>
-             <li><a class="menu-a" href="#">Sobre</a></li>
-             <li><a class="menu-a" href="#">Contato</a></li>
+             <li><a class="menu-a" href="sobre.html">Sobre</a></li>
+             <li><a class="menu-a" href="contato.html">Contato</a></li>
            </ul>
          </div>
        </nav>
@@ -47,8 +48,29 @@
                 <span class="text js-text">behind the scenes /</span>
               </div>
             </div>
-
-            <div class="scroll"></div>
+            <div class="container">
+              <h1>Entre em Contato</h1>
+              <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <label for="category">Categoria:</label>
+                <select id="category" name="category">
+                  <option value="moda">Moda</option>
+                  <option value="institucional">Institucional</option>
+                  <option value="publicidade">Publicidade</option>
+                  <option value="gastronomia">Gastronomia</option>
+                </select>
+                
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
         </main>  
 
         <footer>
@@ -64,7 +86,7 @@
           </div>
           <div class="linha"></div>
           <div class="redes-container">
-            <p class="frase">poliverso films &copy; 2023</p>
+            <p class="frase">poliverso films</p>
             <div class="redes">
               <a class="instagram" href="https://www.instagram.com/poliversofilms/" target="_blank">Instagram</a>
               <a class="linkedin" href="https://www.instagram.com/poliversofilms/" target="_blank">linkedin</a>

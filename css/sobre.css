@@ -4,7 +4,12 @@ body {
     font-family: 'helvetica', sans-serif;
     background: #000;
   }
-
+  
+  ::selection {
+    background-color: #dcff3c;
+    color: #000;
+  }
+  
   .text-marquee {
     position: relative;
     display: flex;

@@ -9,6 +9,11 @@ h1, h2, p {
     color: #fff;
 }
 
+::selection {
+  background-color: #dcff3c;
+  color: #000;
+}
+
 .projetos{
   margin-left: 30px;
 }

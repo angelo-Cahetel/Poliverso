@@ -3,6 +3,12 @@ footer {
   height: 100%;
 }
 
+* {
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'helvetica', sans-serif;
+}
+
 .email-container {
     display: flex;
     align-items: start;
