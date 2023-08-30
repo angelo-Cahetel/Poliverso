@@ -353,10 +353,28 @@ ul {
 }
 
 .makingDifference__projetos {
-  position: relative;
+  position: absolute;
   width: 12vw;
-  left: 53rem;
-  top: 4rem;
+  right: 21rem;
+  top: 113.5rem;
+  rotate: 15deg;
+  z-index: 2;
+}
+
+.makingDifference__projetos2 {
+  position: absolute;
+  width: 12vw;
+  right: 21rem;
+  top: 178.5rem;
+  rotate: 15deg;
+  z-index: 2;
+}
+
+.makingDifference__projetos3 {
+  position: absolute;
+  width: 12vw;
+  right: 21rem;
+  top: 243.5rem;
   rotate: 15deg;
   z-index: 2;
 }
