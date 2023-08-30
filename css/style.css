@@ -304,6 +304,66 @@ ul {
   line-height: 2.4rem;
   font-family: 'helvetica', arial;
   letter-spacing: -0.1vw;
+  width: 50vw;
+  margin-left: 10rem;
+}
+
+.adesivo {
+  position: absolute;
+  width: 5vw;
+}
+
+.V {
+  left: 20rem;
+  top: 58rem;
+  rotate: -4deg;
+}
+
+.smile {
+  right: 45.5rem;
+  top: 54.2rem;
+  rotate: 15deg;
+}
+
+.estrela {
+  right: 28rem;
+}
+
+.R {
+  left: 24rem;
+  rotate: 30deg;
+}
+
+.makingDifference {
+  position: absolute;
+  width: 15vw;
+  top: 51.5rem;
+  left: 40rem;
+  rotate: -25deg;
+}
+
+.quatro {
+  position: relative;
+  width: 10vw;
+  left: -7.5rem;
+  top: -8.3rem;
+  margin: 0;
+  padding: 0;
+  rotate: -82deg;
+}
+
+.makingDifference__projetos {
+  position: relative;
+  width: 12vw;
+  left: 53rem;
+  top: 4rem;
+  rotate: 15deg;
+  z-index: 2;
+}
+
+.esteira-verde {
+  position: relative;
+  top: 5rem;
 }
 
 .botao {

@@ -99,12 +99,12 @@ h1, h2, p {
   }
   
   .logo-header {
-    width: 15rem;
-    height: 5rem;
+    width: 93.75vw;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
+    padding: 2.18rem;
     margin-right: 0;
   }
 
@@ -125,7 +125,7 @@ h1, h2, p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .filter-button {
@@ -172,7 +172,7 @@ h1, h2, p {
 .job {
   color: #FFF;
   font-family: 'helvetica', arial;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -2.22px;
@@ -181,4 +181,17 @@ h1, h2, p {
   
   text-align: justify;
   text-justify: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container img {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .video-projeto {
+    position: relative;
+    top: -2.5rem;
+  }
+
 }

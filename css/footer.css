@@ -27,6 +27,7 @@ footer {
     letter-spacing: -0.3vw;
     text-decoration-line: underline;
     color: #FFF;
+    transition: color 0.25s ease;
   }
   
   .email-link:hover {
@@ -101,6 +102,7 @@ footer {
   .instagram {
     text-decoration: none;
     color: #fff;
+    transition: color 0.25s ease;
   }
   
   .instagram:hover {
@@ -111,6 +113,7 @@ footer {
   .linkedin {
     text-decoration: none;
     color: #fff;
+    transition: color 0.25s ease;
   }
   
   .linkedin:hover {

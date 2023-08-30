@@ -6,40 +6,40 @@ body {
 
   .img-header {
     padding-top: 0.5rem;
-    width: 100%;
-    height: 540px;
+    width: 100vw;
+    height: 60vh;
   }
 
   .projeto-titulo {
     position: absolute;
     font-family: 'helvetica', arial;
-    font-size: 180px;
+    font-size: 11.25rem;
     font-weight: 400;
-    letter-spacing: -10.8px;
+    letter-spacing: -0.3rem;
 
-    padding-left: 80px;
-    top: 5.5rem;
+    padding-left: 5rem;
+    top: 15rem;
   }
 
   .texto {
     display: flex;
     justify-content: baseline;
-    padding: 210px;
-    gap: 0 150px;
+    padding: 13.12rem;
+    gap: 0 9.37rem;
   }
 
   .paragrafo {
     font-family: 'helvetica', arial;
-    font-size: 37px;
+    font-size: 2.3rem;
     font-weight: 400;
-    width: 700px;
+    width: 40.5vw;
     letter-spacing: -2.22px;
     word-break: break-word;
   }
 
   .texto-direita {
     font-family: 'helvetica', arial;
-    font-size: 97px;
+    font-size: 6rem;
     font-weight: 400;
   }
 
@@ -51,7 +51,7 @@ body {
 
   .video-projeto {
     width: 70vw;
-    height: 80rem;
+    height: 85vh;
     display: flex;
 
     clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
@@ -66,7 +66,7 @@ body {
   .creditos {
     color: #FFF;
     font-family: 'helvetica', arial;
-    font-size: 37px;
+    font-size: 2.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -76,29 +76,82 @@ body {
   .conteudo-off {
     display: flex;
     justify-content: center;
-    padding-top: 210px;
+    padding-top: 13rem;
   }
 
   .texto-off {
     color: #FFF;
     font-family: 'helvetica', arial;
-    font-size: 125px;
+    font-size: 7.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 125px;
+    line-height: 7rem;
     letter-spacing: -2px;
 
-    width: 760px;
+    width: 48vw;
   }
 
   span {
     color: #dcff3c;
   }
 
+  .stiker {
+    position: absolute;
+    right: 38rem;
+    top: 162rem;
+    rotate: -10deg;
+  }
+
   .story {
-    width: 405px;
-    height: 720px;
+    width: 25vw;
+    height: 90vh;
     flex-shrink: 0;
     margin-right: 80px;
   }
+
+  @media screen and (max-width: 768px) {
+  
+    .projeto-titulo {
+      font-size: 5rem;
+      top: 18rem;
+    }
+
+    .texto {
+      display: block;
+      padding: 2.5rem;
+    }
+
+    .paragrafo {
+      font-size: 1.5rem;
+      width: 80vw;
+    }
+
+    .video-projeto {
+      width: 100vw;
+      height: 30vh;
+    }
+
+    .creditos {
+      padding: 3rem;
+    }
+
+    .conteudo-off {
+      display: block;
+      padding: 0;
+    }
+
+    .texto-off {
+      font-size: 4rem;
+      line-height: 3.5rem;
+      margin: 0;
+      padding: 3rem 5rem;
+      width: 80vw;
+    }
+
+    .story {
+      padding: 3rem 4rem;
+      width: 70vw;
+    }
+  }
+
 

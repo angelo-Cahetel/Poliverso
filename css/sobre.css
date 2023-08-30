@@ -67,4 +67,20 @@ body {
     width: 50vw;
     padding: 3rem 25rem;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .container {
+      display: block;
+    }
+
+    canvas {
+      width: 5vw;
+      height: 2vh;
+    }
+
+    .chamada {
+      width: 100vw;
+      font-size: 4rem;
+      margin: 0;
+    }
+  }
