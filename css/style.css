@@ -309,19 +309,19 @@ ul {
 }
 
 .adesivo {
-  position: absolute;
+  position: relative;
   width: 5vw;
 }
 
 .V {
-  left: 20rem;
-  top: 58rem;
+  left: -15rem;
+  top: -20rem;
   rotate: -4deg;
 }
 
 .smile {
-  right: 45.5rem;
-  top: 54.2rem;
+  left: 8rem;
+  top: -25rem;
   rotate: 15deg;
 }
 
@@ -335,10 +335,10 @@ ul {
 }
 
 .makingDifference {
-  position: absolute;
+  position: relative;
   width: 15vw;
-  top: 51.5rem;
-  left: 40rem;
+  top: -10rem;
+  left: -10rem;
   rotate: -25deg;
 }
 
