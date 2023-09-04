@@ -35,7 +35,7 @@ a {
 }
 
 /* styles.css */
-#loading-screen {
+/* #loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +46,10 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 888;
+} */
+
+.loading-netflix{
+  z-index: 1001;
 }
 
 .flex {
@@ -54,12 +58,12 @@ a {
   align-items: center;
 }
 
-#loading-text {
+/* #loading-text {
   color: white;
   font-size: 3rem;
   font-family: 'helvetica', sans-serif;
   text-transform: uppercase;
-}
+} */
 
 .intro {
   position: fixed;
