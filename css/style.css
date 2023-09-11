@@ -324,8 +324,8 @@ ul {
 }
 
 .smile {
-  left: 8rem;
-  top: -25rem;
+  left: 8.5rem;
+  top: -16.8rem;
   rotate: 15deg;
 }
 
@@ -338,47 +338,38 @@ ul {
   rotate: 30deg;
 }
 
-.makingDifference {
-  position: relative;
-  width: 15vw;
-  top: -10rem;
-  left: -10rem;
-  rotate: -25deg;
-}
-
 .quatro {
   position: relative;
   width: 10vw;
-  left: -7.5rem;
-  top: -8.5rem;
+  left: -1vw;
+  top: -160px;
   margin: 0;
   padding: 0;
-  rotate: -82deg;
 }
 
 .makingDifference__projetos {
-  position: absolute;
+  position: relative;
   width: 12vw;
-  right: 21rem;
-  top: 113.5rem;
+  left: 43vw;
+  top: -3rem;
   rotate: 15deg;
   z-index: 2;
 }
 
 .makingDifference__projetos2 {
-  position: absolute;
+  position: relative;
   width: 12vw;
-  right: 21rem;
-  top: 178.5rem;
+  left: 43vw;
+  top: -3rem;
   rotate: 15deg;
   z-index: 2;
 }
 
 .makingDifference__projetos3 {
-  position: absolute;
+  position: relative;
   width: 12vw;
-  right: 21rem;
-  top: 243.5rem;
+  left: 43vw;
+  top: -3rem;
   rotate: 15deg;
   z-index: 2;
 }
@@ -413,7 +404,7 @@ ul {
 /* PROJETOS */
 
 .projetos {
-  padding: 5vw;
+  padding: 5vw 0;
   font-family: 'helvetica', arial;
   text-transform: uppercase;
   display: flex;
@@ -446,6 +437,8 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  top: -8rem;
   
   width: 50vw;
   height: 60vh;
@@ -455,11 +448,9 @@ ul {
   
 }
 
-
 .img-2, .img-3, .img-4 {
 
   position: relative;
-
   width: 340px;
   height: 300px;
 
@@ -493,7 +484,7 @@ ul {
     }
 
     .V {
-      left: 2rem;
+      left: -2rem;
     }
 
     .R {
@@ -501,23 +492,32 @@ ul {
     }
 
     .smile {
-      right: 6.5rem;
-      top: 44.2rem;
+      left: -8rem;
+      top: -27rem;
     }
 
     .estrela {
-      right: 3rem;
-      top: 62rem;
+      left: 3rem;
+      top: -28rem;
     }
 
     .makingDifference {
-      left: 3rem;
-      top: 37rem;
+      left: -6rem;
+      top: -14rem;
       width: 30vw;
+    }
+
+    .makingDifference__projetos,
+    .makingDifference__projetos2,
+    .makingDifference__projetos3 {
+      width: 20vw;
+      top: -1rem;
+      left: 16.5rem;
     }
 
     .img-principal {
       height: 45vh;
       width: 75vw;
+      top: -2.5rem;
     }
 }

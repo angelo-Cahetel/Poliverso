@@ -113,7 +113,6 @@
   z-index: 9;
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
-  /* background: linear-gradient(to right , #FFA100, #ABFC00, #00CE85 ); */
   background-color: #000;
   animation: border-transform 7s linear infinite;
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
@@ -149,15 +148,16 @@
 }
 
 .bg-menu{
-  display: block;
+  height: 100%;
+  /* display: block; */
   margin: 0 auto;
   transform: scaleX(-1)
 }
 
 .icons{ 
-    width: auto; 
-    max-width: 300px;
-    margin: -8vh 0 -2.4vh -5.6vh;
+    width: 15vw; 
+    /* max-width: 300px; */
+    margin: -6vh 0 -2.4vh -5.6vh;
 }
 
 .pt-5{
@@ -210,11 +210,12 @@
   position: relative;
   color: #ececee;
   transition: all 250ms linear;
-  
+  text-decoration: underline;
 }
 .nav ul li .menu-a:hover{
   text-decoration: none;
   color: #dcff3c;
+  text-decoration: underline #dcff3c;
 }
 .nav ul li .menu-a:after{
   display: block;
