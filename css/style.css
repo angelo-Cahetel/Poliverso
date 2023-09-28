@@ -342,7 +342,7 @@ ul {
   position: relative;
   width: 10vw;
   left: -1vw;
-  top: -160px;
+  top: -165px;
   margin: 0;
   padding: 0;
 }
@@ -360,7 +360,7 @@ ul {
   position: relative;
   width: 12vw;
   left: 43vw;
-  top: -3rem;
+  top: -48px;
   rotate: 15deg;
   z-index: 2;
 }
@@ -444,7 +444,12 @@ ul {
   height: 60vh;
 
   clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
-  
+  transform: rotateX(0) rotateY(0);
+  transform-style: preserve-3d;
+  transition-duration: 0.1s;
+  transition-timing-function: ease !important;
+  backface-visibility: hidden;
+  will-change: tranform;
   
 }
 
@@ -505,6 +510,11 @@ ul {
       left: -6rem;
       top: -14rem;
       width: 30vw;
+    }
+
+    .quatro {
+      width: 30vw;
+      top: -60px;
     }
 
     .makingDifference__projetos,

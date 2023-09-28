@@ -1,17 +1,14 @@
-coisas para serem acresentadas no site 
+Boss Bitch 
+BarraShopping - Barracadabra 
+Gatorade - 
+Renner Pride 
+Renner - 30 pra um 
+Instituto Caldeira - 
+Iguatemi - 
+BarraShopping - App Multi
 
-HOME:
-    header: 
 
-    Plvr abrindo e fechando;
-    ref: https://www.dotfilms.co/
+fazer o video dar play quando scrollar a pagina.
+fazer o video a 1800p
 
-    caldeira 
-    barra 
-    renner 
-    espartano 
-    iguatemi ou colorado
-
-    conteudo:
-    Diminuir o video e mudar a borda;
-
+mexer no filtro dos projetos
