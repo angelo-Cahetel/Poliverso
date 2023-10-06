@@ -20,7 +20,7 @@ footer {
     font-family: 'helvetica', arial;
     font-style: normal;
     font-weight: 400;
-    line-height: 0.93rem;
+    line-height: 3.8rem;
   }
   
   .paragrafo-contato {
@@ -45,7 +45,7 @@ footer {
     font-family: 'helvetica', arial;
     font-style: normal;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 3.8rem;
    
     position: absolute;
     right: 5rem;
@@ -78,7 +78,7 @@ footer {
   
   
   .frase {
-    font-family: 'helvetica', arial,;
+    font-family: 'helvetica', arial;
     font-size: 1.56rem;
     font-weight: 400;
     font-style: normal;

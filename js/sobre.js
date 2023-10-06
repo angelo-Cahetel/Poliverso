@@ -1,14 +1,14 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 5000);
 camera.position.z = 15;
 
-
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(window.innerWidth, window.innerHeight); // Ajuste o tamanho do canvas
+const initialWidth = window.innerWidth;
+const initialHeight = window.innerHeight;
+renderer.setSize(initialWidth, initialHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 const loader = new GLTFLoader();
@@ -42,9 +42,13 @@ function animate() {
 }
 
 window.addEventListener("resize", function () {
-    camera.aspect = window.innerWidth / window.innerHeight; // Atualize a proporção da câmera
+    const newWidth = window.innerWidth;
+    const newHeight = window.innerHeight;
+
+    camera.aspect = newWidth / newHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight); // Atualize o tamanho do canvas
+
+    renderer.setSize(newWidth, newHeight);
 });
 
 // Comece a renderizar a cena após o carregamento do modelo

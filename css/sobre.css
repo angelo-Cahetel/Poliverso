@@ -74,18 +74,38 @@ body {
   }
 
   @media screen and (max-width: 768px) {
+    .text-marquee {
+      top: -80px;
+    }
+
     .container {
       display: block;
+      margin: 0;
+    }
+
+    .chamada {
+      width: auto;
+      height: 100%;
+      
     }
 
     canvas {
-      width: 5vw;
-      height: 2vh;
+      /* display: none !important; */
+      position: absolute;
+      left: 0;
+      top: 30%;
     }
 
     .chamada {
       width: 100vw;
       font-size: 4rem;
       margin: 0;
+    }
+
+    .texto {
+      width: auto;
+      padding: 0;
+      margin: 50px;
+      font-size: 20px;
     }
   }

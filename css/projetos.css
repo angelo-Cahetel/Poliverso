@@ -2,7 +2,6 @@ html {
   background-color: #000;
   font-family: 'helvetica', arial;
   overflow-x: hidden;
-  margin: 0;
 }
 
 h1, h2, p {
@@ -96,11 +95,16 @@ margin-left: 30px;
   }
 }
 
+div.logo {
+  margin: 0;
+}
+
 .logo {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin: 0;
 }
 
 .logo-header {
@@ -119,6 +123,11 @@ video {
 
   display: flex;
   justify-content: end;
+  margin: 0;
+}
+
+.video-projeto {
+  margin-bottom: 50px;
 }
 
 .gallery {
@@ -142,6 +151,11 @@ background-color: transparent;
 border: none;
 cursor: pointer;
 margin: 5px;
+transition: color 0.25s ease;
+}
+
+.filter-button:hover {
+  color: #dcff3c;
 }
 
 .filter-button.active {
@@ -186,6 +200,30 @@ margin: 0;
 
 text-align: justify;
 text-justify: auto;
+}
+
+.botao-container {
+  display: flex;
+  align-items: center;
+  gap: 23rem;
+}
+
+.botao {
+  font-family: 'helvetica', arial;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 5px;
+
+  
+}
+
+.botao:hover {
+  color: #dcff3c;
+  border: 2px solid #dcff3c;
 }
 
 @media screen and (max-width: 768px) {

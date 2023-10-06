@@ -81,7 +81,7 @@ adicionarEventosVideo('videoBraskem', vimeoPlayerBraskem);
 
 
 //fazendo a pagina do projeto abrir
-document.getElementById('Boss').addEventListener('click', function () {
+document.getElementsByClassName('.Boss').addEventListener('click', function () {
   //redirecionando a pagina
   window.location.href = 'boss.html';
 });
