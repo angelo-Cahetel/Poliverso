@@ -269,59 +269,7 @@
   }
 }
 
-.noise {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  background-image: url("https://www.paulrogerdev.fr/codepen/noise.png"); 
-  animation: 2s steps(1) infinite noise;
-}
 
-@keyframes noise {
-  0%, 100% {
-      background-position: 0 0;
-  }
-
-  10% {
-      background-position: -5% -10%;
-  }
-
-  20% {
-      background-position: -15% 5%;
-  }
-
-  30% {
-      background-position: 7% -25%;
-  }
-
-  40% {
-      background-position: 20% 25%;
-  }
-
-  50% {
-      background-position: -25% 10%;
-  }
-
-  60% {
-      background-position: 15% 5%;
-  }
-
-  70% {
-      background-position: 0% 15%;
-  }
-
-  80% {
-      background-position: 25% 35%;
-  }
-
-  90% {
-      background-position: -10% 10%;
-  }
-}
 
 @media (min-width: 1550px) {
   :root {

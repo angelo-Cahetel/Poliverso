@@ -17,84 +17,6 @@ color: #000;
 margin-left: 30px;
 }
 
-.noise {
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  background-image: url("https://www.paulrogerdev.fr/codepen/noise.png"); 
-  animation: 2s steps(1) infinite noise;
-}
-
-@keyframes noise {
-  0%, 100% {
-      background-position: 0 0;
-  }
-
-  10% {
-      background-position: -5% -10%;
-  }
-
-  20% {
-      background-position: -15% 5%;
-  }
-
-  30% {
-      background-position: 7% -25%;
-  }
-
-  40% {
-      background-position: 20% 25%;
-  }
-
-  50% {
-      background-position: -25% 10%;
-  }
-
-  60% {
-      background-position: 15% 5%;
-  }
-
-  70% {
-      background-position: 0% 15%;
-  }
-
-  80% {
-      background-position: 25% 35%;
-  }
-
-  90% {
-      background-position: -10% 10%;
-  }
-}
-
-@media (min-width: 1550px) {
-  :root {
-    --fontSizeMenu: 16px;
-    --fontSizeP: 16px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .intro__green div {
-    transform: scaleY(4);
-  }
-}
-
-@media (max-width: 600px) {
-  :root {
-    --fontSizeMenu: 11px;
-    --fontSizeP: 11px;
-  }
-  .menu {
-    width: 90vw;
-    margin: 4vw 0;
-  }
-  .menu ul {
-    gap: 0 2vw;
-  }
-}
-
 div.logo {
   margin: 0;
 }
@@ -124,10 +46,13 @@ video {
   display: flex;
   justify-content: end;
   margin: 0;
+  
 }
 
-.video-projeto {
+
+.video-projeto  {
   margin-bottom: 50px;
+  z-index: -2;
 }
 
 .gallery {
@@ -172,19 +97,26 @@ flex-direction: row;
 padding-top: 80px;
 width: 94.79%;
 height: 33.33%;
-gap: 60px 0px;
+gap: 60px 50px;
 }
 
 .image-container img {
   position: relative;
   width: 50rem;
   height: 25rem;
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
   margin: 0;
+
+  
+  
+}
+
+.frames {
+  /* padding: 30px; */
 }
 
 .info {
 display: flex;
+
 
 }
 
@@ -205,7 +137,7 @@ text-justify: auto;
 .botao-container {
   display: flex;
   align-items: center;
-  gap: 23rem;
+  gap: 25rem;
 }
 
 .botao {
@@ -217,8 +149,7 @@ text-justify: auto;
   border: 2px solid #fff;
   border-radius: 100px;
   padding: 5px;
-
-  
+  margin: 10px;
 }
 
 .botao:hover {

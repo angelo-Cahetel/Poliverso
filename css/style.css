@@ -183,7 +183,8 @@ ul {
 }
 
 .texto-principal{
-  margin: -3vh;
+  margin-top: 120px;
+  z-index: 8;
 }
 
 .clip__bg {
@@ -194,14 +195,14 @@ ul {
   width: 90vw;
   height: clamp(400px, 35vw, 800px);
   object-fit: cover;
-  clip-path: var(--corte);
+  border-radius: 50px;
   overflow: hidden;
-  z-index: 3;
+  z-index: 8;
 }
 
 .noise {
   position: fixed;
-  z-index: 999;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -250,33 +251,6 @@ ul {
 
   90% {
       background-position: -10% 10%;
-  }
-}
-
-@media (min-width: 1550px) {
-  :root {
-    --fontSizeMenu: 16px;
-    --fontSizeP: 16px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .intro__green div {
-    transform: scaleY(4);
-  }
-}
-
-@media (max-width: 600px) {
-  :root {
-    --fontSizeMenu: 11px;
-    --fontSizeP: 11px;
-  }
-  .menu {
-    width: 90vw;
-    margin: 4vw 0;
-  }
-  .menu ul {
-    gap: 0 2vw;
   }
 }
 
@@ -343,37 +317,11 @@ ul {
   position: relative;
   width: 10vw;
   left: -1vw;
-  top: -165px;
+  top: -40px;
   margin: 0;
   padding: 0;
 }
 
-.makingDifference__projetos {
-  position: relative;
-  width: 12vw;
-  left: 43vw;
-  top: -3rem;
-  rotate: 15deg;
-  z-index: 2;
-}
-
-.makingDifference__projetos2 {
-  position: relative;
-  width: 12vw;
-  left: 43vw;
-  top: -48px;
-  rotate: 15deg;
-  z-index: 2;
-}
-
-.makingDifference__projetos3 {
-  position: relative;
-  width: 12vw;
-  left: 43vw;
-  top: -3rem;
-  rotate: 15deg;
-  z-index: 2;
-}
 
 .esteira-verde {
   position: relative;
@@ -430,9 +378,6 @@ ul {
 }
 
 .img-principal {
-
-  position: relative;
-
   
   display: flex;
   justify-content: center;
@@ -444,13 +389,14 @@ ul {
   width: 50vw;
   height: 60vh;
 
-  clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
+  z-index: 1000;
   transform: rotateX(0) rotateY(0);
   transform-style: preserve-3d;
   transition-duration: 0.1s;
   transition-timing-function: ease !important;
   backface-visibility: hidden;
   will-change: tranform;
+  border-radius: 50px;
   
 }
 
@@ -515,7 +461,7 @@ ul {
 
     .quatro {
       width: 30vw;
-      top: -60px;
+      top: -28px;
     }
 
     .makingDifference__projetos,
