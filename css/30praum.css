@@ -20,7 +20,7 @@ body {
     font-family: 'helvetica', arial;
     font-size: 11.25rem;
     font-weight: 400;
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.5rem;
 
     padding-left: 5rem;
     top: 50%;
@@ -79,11 +79,12 @@ body {
   }
 
   .conteudo-off {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding-top: 13rem; */
-    gap: 0;
+    gap: 120px;
     margin: 0;
   }
 
