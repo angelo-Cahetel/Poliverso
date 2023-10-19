@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Poliverso | Films</title>
 </head>
 <body>
@@ -56,18 +57,21 @@
               </div>
             </div>
             <div class="container">
-              <h1>Entre em Contato</h1>
+              <div class="contato-titulo">
+                <p class="chamadaContato">Entre em Contato</p>
+                <img class="smileContato" src="./img/smileContato.png" alt="">
+              </div>
               <form id="contact-form">
-                <label for="name">Nome:</label>
+                <label for="name">nome:</label>
                 <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email:</label>
+                <label for="email">email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Mensagem:</label>
+                <label for="message">mensagem:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
-                <label for="category">Categoria:</label>
+                <label for="category">categoria:</label>
                 <select id="category" name="category">
                   <option value="moda">Moda</option>
                   <option value="institucional">Institucional</option>
@@ -77,6 +81,7 @@
                 
                 <button type="submit">Enviar</button>
               </form>
+              <div id="3Dcontato"></div>
             </div>
         </main>  
 
@@ -103,6 +108,6 @@
     </body>
         
         <script src="./js/contato.js"></script>
-        <script src="./js/index.js"></script>
+        <!-- <script src="./js/index.js"></script> -->
 </body>
 </html>

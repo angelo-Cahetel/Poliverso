@@ -34,20 +34,6 @@ a {
   color: #000;
 }
 
-/* styles.css */
-/* #loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 888;
-} */
-
 .loading-netflix{
   z-index: 1001;
 }
@@ -56,25 +42,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* #loading-text {
-  color: white;
-  font-size: 3rem;
-  font-family: 'helvetica', sans-serif;
-  text-transform: uppercase;
-} */
-
-.intro {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  font-size: var(--fontSizeIntro);
-  transform-origin: top;
 }
 
 .hidden {
@@ -147,29 +114,6 @@ ul {
   transform-origin: top;
 }
 
-.intro__green {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30%;
-  background-color: #dcff3c;
-  font-family: var(--font1);
-  font-size: 30vw;
-  font-weight: 900;
-  line-height: 30vh;
-  overflow: hidden;
-  color: transparent;
-  text-align: center;
-  -webkit-text-stroke: 1px #000;
-  transform: scaleY(0);
-  transform-origin: bottom;
-}
-
-.intro__green div {
-  transform: scaleX(0.5) scaleY(1.5);
-  letter-spacing: -1vw;
-}
 
 .clip {
   margin: 0 auto;
@@ -187,15 +131,22 @@ ul {
   z-index: 8;
 }
 
+.clip__inner {
+  /* margin-top: 210px; */
+  height: auto;
+  width: auto;
+}
+
 .clip__bg {
   margin: 0;
-  margin-top: 180px;
+  
   position: relative;
+  top: 106px;
   display: flex;
   width: 90vw;
   height: clamp(400px, 35vw, 800px);
   object-fit: cover;
-  border-radius: 50px;
+  border-radius: 10px;
   overflow: hidden;
   z-index: 8;
 }
@@ -216,21 +167,34 @@ ul {
   font-size: 5.5rem;
   letter-spacing: -0.3vw;
   text-transform: lowercase;
-  margin: 5rem;
+  margin: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
+
+.titulo-regular {
+  margin-top: 5rem;
+}
+
 
 .titulo-span {
   color: #dcff3c;
 }
 
-.paragrafo {
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2.4rem;
+.containerParagrafo {
+  margin: 0;
+}
+
+.paragrafoHome {
+  font-size: 25px;
+  line-height: normal !important;
   font-family: 'helvetica', arial;
-  letter-spacing: -0.1vw;
-  width: 50vw;
-  margin-left: 10rem;
+  letter-spacing: -1.2px;
+  margin: 0;
+  padding: 30px;
 }
 
 .adesivo {
@@ -268,32 +232,50 @@ ul {
   padding: 0;
 }
 
-
-.esteira-verde {
-  position: relative;
-  top: 5rem;
+section.transicao {
+  margin: 80px;
 }
 
-.botao {
+.esteira-verde {
+  width: 100%;
+}
+
+.botaoProjetos {
    /* estilo do texto */
   color: #FFF;
   text-align: center;
-  font-size: 60px;
+  font-size: 20px;
   font-family: 'helvetica', arial;
+  letter-spacing: -1.2px;
+  font-style: italic;
 
    /* borda do botao  */
-  width: 400px;
-  height: 70px;
+  width: 226px;
+  height: 44px;
   flex-shrink: 0;
-  border: 2px solid #FFF;
-  background: #000;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  background: none;
   cursor: pointer;
 
+  margin: 15px;
+}
 
+.botaoProjetos:hover {
+  color: #dcff3c;
+  border: 1px solid #dcff3c;
 }
 
 .transicao {
   margin: 12rem 0;
+}
+
+/* Linhas da home */
+.linhaHome {
+  width: 100%;
+  height: 1px;
+  background: #FFF;
+  margin-top: 50px;
 }
 
 /* PROJETOS */
@@ -314,6 +296,7 @@ ul {
   align-items: center;
   flex-direction: column;
   font-size: 1.15rem;
+  color: #dcff3c;
 
 }
 
@@ -342,8 +325,32 @@ ul {
   transition-timing-function: ease !important;
   backface-visibility: hidden;
   will-change: tranform;
-  border-radius: 50px;
+  border-radius: 10px;
   
+}
+
+.botao__projetos {
+  position: relative;
+  top: -80px;
+  width: 226px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'helvetica', arial;
+  letter-spacing: -1.2px;
+  font-style: italic;
+}
+
+.botao__projetos:hover {
+  color: #dcff3c;
+  border-color: #dcff3c;
 }
 
 .img-2, .img-3, .img-4 {
@@ -364,17 +371,46 @@ ul {
 @media screen and (max-width:768px) {
   body {
     overflow-x: hidden;
+    margin: 0;
   }
     .esteira-verde {
       width: 100vh;
     }
 
-    .titulo {
-      font-size: 3rem;
+    .linhaHome {
+      width: 100%;
+      margin: 20px 0;
     }
 
-    .paragrafo {
-      margin-left: 3rem;
+    .container_titulo {
+      font-size: 50px;
+      margin: 20px;
+    }
+
+    .paragrafoHome {
+      font-size: 20px;
+      letter-spacing: normal;
+      padding: 20px;
+    }
+
+    .botaoProjetos {
+      color: #dcff3c;
+      border: 1px solid #dcff3c;
+      margin: 20px;
+    }
+
+    .transicao {
+      margin: 20px;
+    }
+
+    .esteira-verde {
+      width: 100%;
+      height: auto;
+      top: 0;
+    }
+
+    .titulo {
+      font-size: 30px;
     }
 
     .adesivo {

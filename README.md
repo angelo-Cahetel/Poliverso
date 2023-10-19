@@ -16,3 +16,6 @@ mexer no filtro dos projetos
 tirar os filtros das fotos
 tirar o adesivo da poliverso
 
+arrumar bugs de tamanho
+criar uma parte de projetos com e sem making off
+ver espaçamento do logo
