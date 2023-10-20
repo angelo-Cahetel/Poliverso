@@ -129,6 +129,12 @@ footer {
     text-decoration: underline #dcff3c;
   }
 
+  .linhaFooter {
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+  }
+
   @media screen and (max-width: 768px) {
     .email-container {
       margin: 0;
@@ -190,6 +196,7 @@ footer {
       margin: 0;
       padding: 3.2rem 1.5rem;
       letter-spacing: 0;
+      width: 50%;
     }
 
     .instagram,

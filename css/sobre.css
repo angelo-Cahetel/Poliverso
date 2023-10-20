@@ -9,25 +9,7 @@ body {
     background-color: #dcff3c;
     color: #000;
   }
-  
-  .text-marquee {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
-    top: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 12rem; 
-    /* rotate: -1deg;  */
-}
 
-.text-single {
-    position: relative;
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    will-change: transform;
-}
 
 .text, .text2 {
     text-transform: uppercase;
@@ -42,36 +24,105 @@ body {
 
   .container {
     display: flex;
-    margin: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+
+  div #container3D {
+    display: block;
+    position: relative;
+    top: -110px;
+    left: -695px;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+  }
+
   
   .chamada {
     width: 50vw;
     color: #fff;
     font-size: 5.94rem;
     letter-spacing: -3px;
-    rotate: -2deg;
     padding: 0 2rem;
     margin-left: 5rem;
   }
 
-    canvas {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 30rem;
-    top: 35rem;
+  .container {
+    position: relative;
+    top: 30px;
   }
 
-  .texto {
-    font-family: 'helvetica', sans-serif;
-    font-size: 2.6rem;
-    color: #fff;
-    width: 50vw;
-    padding: 3rem 25rem;
+  .gap {
+    padding: 15px;
   }
+
+  .texto-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caixa {
+    position: relative;
+    top: -41px;
+    border: 1px solid #fff;
+    padding: 80px;
+  }
+
+  .caixa3d {
+    border: 1px solid #fff;
+    width: 28%;
+    height: 100%;
+  }
+
+  p.texto {
+    font-family: 'helvetica', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .verde {
+    color: #dcff3c;
+  }
+
+  span {
+    color: #dcff3c;
+  }
+
+  .linhaSobre {
+    width: 35%;
+    height: 1px;
+    background: #fff;
+    margin-top: 120px;
+  }
+
+  /* .linhaVertical {
+    position: relative;
+    left: -334px;
+    top: 680px;
+    width: 81.2%;
+    height: 1px;
+    background: #fff;
+    transform: rotate(90deg);
+  }
+
+  .linhaVertical2 {
+    position: relative;
+    left: 334px;
+    top: 680px;
+    width: 81.2%;
+    height: 1px;
+    background: #fff;
+    transform: rotate(90deg);
+  } */
 
   @media screen and (max-width: 768px) {
     .text-marquee {
@@ -102,10 +153,25 @@ body {
       margin: 0;
     }
 
-    .texto {
-      width: auto;
-      padding: 0;
-      margin: 50px;
+    p.texto {
+      width: 200px;
       font-size: 20px;
+    }
+
+    .linhaSobre {
+      width: 100%;
+    }
+
+    .linhaVertical {
+     display: none;
+    }
+
+    .linhaVertical2 {
+      display: none;
+    }
+
+    div #container3D {
+      top: -290px;
+      width: 50%;
     }
   }

@@ -443,7 +443,7 @@ section.transicao {
 
     .quatro {
       width: 30vw;
-      top: -28px;
+      top: -25px;
     }
 
     .makingDifference__projetos,
@@ -458,5 +458,11 @@ section.transicao {
       height: 45vh;
       width: 75vw;
       top: -2.5rem;
+    }
+
+    .botao__projetos {
+      top: -35px;
+      color: #dcff3c;
+      border-color: #dcff3c;
     }
 }

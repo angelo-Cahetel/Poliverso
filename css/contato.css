@@ -59,7 +59,7 @@ body {
   }
 
   .chamadaContato {
-    font-family: 'Inter', sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-style: italic;
     font-size: 30px;
     letter-spacing: -1.8px;
@@ -71,18 +71,38 @@ body {
     height: 60px;
   }
 
+  .contact-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
   label {
     color: #fff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-size: 20px;
     font-style: italic;
     letter-spacing: -1.2px;
     font-weight: 400;
   }
+
+  label {
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
   
   form label {
-    display: block;
+    display: flex;
+    align-items: baseline;
     margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #dcff3c;
   }
   
   form input[type="text"],
@@ -92,9 +112,11 @@ body {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     background-color: #000;
-    border-radius: 3px;
   }
   
   form select {
