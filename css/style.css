@@ -119,7 +119,7 @@ ul {
   margin: 0 auto;
   position: relative;
   display: flex;
-  top: -13.7vh;
+  top: -11vh;
   justify-content: center;
   align-items: center;
   width: 90vw;
@@ -233,7 +233,8 @@ ul {
 }
 
 section.transicao {
-  margin: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .esteira-verde {
