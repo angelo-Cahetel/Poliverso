@@ -1,16 +1,4 @@
 
-// INTRO
-
-window.addEventListener('load', function() {
-  // Remove a tela de loading
-  var loadingScreen = document.getElementById('loading-screen');
-  var content = document.getElementById('content');
-
-  loadingScreen.style.display = 'none';
-  content.classList.remove('hidden');
-});
-
-
 //CURSOR
 var cursor = document.querySelector(".cursor")
 

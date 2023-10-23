@@ -1,3 +1,4 @@
+
 html {
   background-color: #000;
   font-family: 'helvetica', arial;
@@ -13,9 +14,6 @@ background-color: #dcff3c;
 color: #000;
 }
 
-.projetos{
-margin-left: 30px;
-}
 
 div.logo {
   margin: 0;
@@ -52,13 +50,18 @@ video {
 
 .video-projeto  {
   margin-bottom: 50px;
-  z-index: -2;
 }
 
 .gallery {
 text-align: center;
 /* padding: 20px; */
 width: 100%;
+}
+
+.linhaProjetos {
+  width: 100%;
+  height: 1px;
+  background: #FFF;
 }
 
 .filter-buttons-container {
@@ -73,7 +76,7 @@ width: 100%;
 padding: 10px 20px;
 font-size: 1.4rem;
 font-family: 'helvetica', arial;
-color: #ccc;
+color: #fff;
 background-color: transparent;
 border: none;
 cursor: pointer;
@@ -180,14 +183,20 @@ iframe {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
-  .videoContainer {
+.videoContainer {
     left: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
     
+  }
+
+  .linhaProjetos {
+    width: auto;
+    margin: 0;
   }
 
 iframe {
@@ -198,14 +207,15 @@ iframe {
 
 .video-projeto {
   position: relative;
-  top: -2.5rem;
+  top: -1.5rem;
+  margin: 0;
 }
 
 .botao-container {
-  gap: 100px;
+  gap: 80px;
   position: relative;
   top: -180px;
-  left: 160px;
+  left: 28%;
 }
 
 .botao {

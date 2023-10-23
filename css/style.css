@@ -34,20 +34,6 @@ a {
   color: #000;
 }
 
-.loading-netflix{
-  z-index: 1001;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hidden {
-  display: none;
-}
-
 .texto-principal {
   color: #dcff3c;
   position: absolute;
@@ -76,45 +62,6 @@ ul {
   list-style: none;
 }
 
-.menu {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 50%;
-  width: calc(100% - 80px);
-  justify-content: space-between;
-  margin: 40px 0;
-  transform: translatex(-50%);
-}
-
-.menu__right {
-  width: 50px;
-  height: 50px;
-  gap: 5px;
-  background-color: #fff;
-  border-radius: 100%;
-  cursor: pointer;
-}
-
-.menu__right div {
-  width: 50%;
-  height: 2px;
-  background-color: #000;
-}
-
-.intro {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  font-size: var(--fontSizeIntro);
-  transform-origin: top;
-}
-
-
 .clip {
   margin: 0 auto;
   position: relative;
@@ -132,7 +79,6 @@ ul {
 }
 
 .clip__inner {
-  /* margin-top: 210px; */
   height: auto;
   width: auto;
 }
@@ -374,8 +320,20 @@ section.transicao {
     overflow-x: hidden;
     margin: 0;
   }
+
+  .clip__bg {
+    top: 80px;
+  }
+
+  section.transicao {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
     .esteira-verde {
-      width: 100vh;
+      width: 100%;
+      height: 100%;
     }
 
     .linhaHome {
@@ -414,45 +372,14 @@ section.transicao {
       font-size: 30px;
     }
 
-    .adesivo {
-      width: 14vw;
-    }
-
-    .V {
-      left: -2rem;
-    }
-
-    .R {
-      left: 5rem;
-    }
-
-    .smile {
-      left: -8rem;
-      top: -27rem;
-    }
-
-    .estrela {
-      left: 3rem;
-      top: -28rem;
-    }
-
-    .makingDifference {
-      left: -6rem;
-      top: -14rem;
-      width: 30vw;
+    section.projetos {
+      margin: 0;
+      /* padding: 0; */
     }
 
     .quatro {
       width: 30vw;
       top: -25px;
-    }
-
-    .makingDifference__projetos,
-    .makingDifference__projetos2,
-    .makingDifference__projetos3 {
-      width: 20vw;
-      top: -1rem;
-      left: 16.5rem;
     }
 
     .img-principal {

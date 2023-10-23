@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-
-    <div class="noise"></div>
-    <div class="noise"></div>
-    
+    <header>
     <section class="header_container">
       <input class="menu-icon menu-body" type="checkbox" id="menu-icon" name="menu-icon"/>
       <label for="menu-icon"></label>
@@ -39,26 +37,29 @@
         </div>
       </nav>
      </section>
-      <div class="logo">
-        <a class="logo-header" href="index.html">
-          <video class="logo-header" autoplay loop muted poster="./video/logoAnimado.mp4">
-            <source src="./video/logoAnimado.mp4">
-          </video>
-        </a>
-      </div>
-      <div class="linhaHeader"></div> 
+        
+            <div class="logo">
+              <a class="logo-header" href="index.html">
+              <video class="logo-header" autoplay loop muted src="./video/logoAnimado.mp4" style="pointer-events: none;">
+                <source src="./video/logoAnimado.mp4">
+              </video>
+            </a>
+            </div>  
+            <div class="linhaHeader"></div>     
+        </header>
     <main>
       <video class="video-projeto" autoplay muted poster="./video/titulo projetos.mp4">
         <source class="video-projeto" src="./video/titulo projetos.mp4">
       </video>
     
-    <section class="projetos">
+    <section class="projetosContainer">
+      <div class="linhaProjetos"></div>
       <div class="gallery">
         <button class="filter-button active" data-filter="all">Todos</button>
         <button class="filter-button" data-filter="institucional">Institucional</button>
         <button class="filter-button" data-filter="moda">Moda</button>
         <button class="filter-button" data-filter="publicidade">Publicidade</button>
-    
+        <div class="linhaProjetos"></div>
         <div class="image-container">
 
             <div class="frames">
@@ -130,8 +131,8 @@
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoBarracadabra" src="https://player.vimeo.com/video/863659326?h=e95c478f43&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="publicidade"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
               <div class="botao-container">
-                <h1 class="job" data-category="publicidade">BarraShopping Barracadabra</h1>
-                <!-- <a href="boss.html"><p class="botao">Saiba mais</p></a> -->
+                <h1 class="job" data-category="publicidade">Barracadabra</h1>
+                <a href="barracadabra.html"><p class="botao">Saiba mais</p></a>
               </div>
               <div class="info">
               </div>
@@ -139,15 +140,18 @@
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoApp" src="https://player.vimeo.com/video/864428491?h=37ccd4bc68&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="publicidade"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
               <div class="botao-container">
-                <h1 class="job" data-category="publicidade">BarraShopping App Multi</h1>
-                <!-- <a href="boss.html"><p class="botao">Saiba mais</p></a> -->
+                <h1 class="job" data-category="publicidade">App Multi</h1>
+                <a href="appmulti.html"><p class="botao">Saiba mais</p></a>
               </div>
               <div class="info">
               </div>
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoIguatemi" src="https://player.vimeo.com/video/864520155?h=972bcd038c&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="publicidade"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="publicidade">Iguatemi Dia dos namorados</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="publicidade">Iguatemi</h1>
+                <a href="iguatemi.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
@@ -159,31 +163,46 @@
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoCaldeira" src="https://player.vimeo.com/video/864455997?h=93a25c73e6&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="institucional"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="institucional">Instituto Caldeira</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="institucional">Instituto Caldeira</h1>
+                <a href="caldeira.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoInos" src="https://player.vimeo.com/video/864438424?h=83d7baca7a&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="institucional"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="institucional">Inós</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="institucional">Inós</h1>
+                <a href="inos.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoSports" src="https://player.vimeo.com/video/864441968?h=d003b2cc2b&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="institucional"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="institucional">Ipanema Sports</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="institucional">Ipanema Sports</h1>
+                <a href="sports.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoWine" src="https://player.vimeo.com/video/864432083?h=05c3cbf4ea&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="institucional"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="institucional">Wine Locals</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="institucional">Wine Locals</h1>
+                <a href="wine.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
             <div class="frames">
               <div class="videoContainer" style="padding:0 0 0 0;position:relative;width: 700px;height: 400px;cursor: pointer;"><iframe id="videoBraskem" src="https://player.vimeo.com/video/864174733?h=64d2d01937&title=0&byline=0&portrait=0&controls=0&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; muted" allowfullscreen data-category="institucional"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <h1 class="job" data-category="institucional">Braskem</h1>
+              <div class="botao-container">
+                <h1 class="job" data-category="institucional">Braskem</h1>
+                <a href="braskem.html"><p class="botao">Saiba mais</p></a>
+              </div>
               <div class="info">
               </div>
             </div>
@@ -193,6 +212,7 @@
     </main>
 
     <footer>
+      <div class="linhaFooter"></div>
       <div class="email-container">
         <div class="email">
           <p class="paragrafo-contato">conecte-se com a gente</p>

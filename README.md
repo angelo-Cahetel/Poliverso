@@ -19,3 +19,5 @@ tirar o adesivo da poliverso
 arrumar bugs de tamanho
 criar uma parte de projetos com e sem making off
 ver espaçamento do logo
+
+vintage, Aurea, BPro e Termolar 
