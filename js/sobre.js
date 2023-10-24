@@ -23,11 +23,6 @@ loader.load('./3d/CARINHA.glb', function (gltf) {
 });
 
 
-// const texture = new THREE.TextureLoader().load("./3d/textura.mtl");
-// texture.wrapS = THREE.RepeatWrapping;
-// texture.wrapT = THREE.RepeatWrapping;
-// texture.repeat.set(4, 4);
-
 const topLight = new THREE.DirectionalLight(0xdcff3c, 1);
 topLight.position.set(500, 500, 500);
 topLight.castShadow = true;

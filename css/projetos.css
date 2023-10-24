@@ -116,16 +116,6 @@ gap: 60px 50px;
   
 }
 
-.frames {
-  /* width: min-content; */
-}
-
-.info {
-/* display: flex; */
-
-
-}
-
 .job {
 color: #FFF;
 font-family: 'helvetica', arial;
@@ -161,9 +151,10 @@ text-justify: auto;
 }
 
 .botao:hover,
-.botao:hover {
-  color: #dcff3c;
+.botao2:hover {
+  color: #000;
   border: 2px solid #dcff3c;
+  background: #dcff3c;
 }
 
 .videoContainer {

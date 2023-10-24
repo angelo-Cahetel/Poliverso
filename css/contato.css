@@ -7,45 +7,24 @@ body {
     color: #000;
   }
 
-.scroll {
-    height: 25vh;
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+canvas {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: -15%;
+  top: -80px;
 }
 
-.text-marquee {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow-x: hidden;
-    top: -8rem;
-}
-
-.text-single {
-    position: relative;
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    will-change: transform;
-    
-}
-
-.text {
-    padding: 0;
-    font-size: 10rem;
-    display: inline-block;
-    margin-right: 2rem;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    color: #dcff3c;
+.container3D {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    max-width: 600px;
+    width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #fff;
@@ -53,9 +32,22 @@ body {
   }
 
   .contato-titulo {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .linhaBox {
+    position: relative;
+    top: -55px;
+    left: -20px;
+    width: 640px;
+    height: 1px;
+    background: #fff;
   }
 
   .chamadaContato {
@@ -77,19 +69,38 @@ body {
     margin-bottom: 10px;
   }
 
-  label {
+  .label {
+    position: relative;
+    top: -30px;
     color: #fff;
     font-family: 'helvetica', sans-serif;
     font-size: 20px;
     font-style: italic;
     letter-spacing: -1.2px;
     font-weight: 400;
+    padding: 20px 0;
   }
 
-  label {
-    border-top: 1px solid #fff;
-    width: 100%;
+  .linhaForm {
+    position: relative;
+    top: -40px;
+    left: -20px;
+    width: 640px;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
   }
+
+  .linhaBotao {
+    position: relative;
+    /* top: 20px; */
+    left: -20px;
+    width: 640px;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+  }
+
   
   form label {
     display: flex;
@@ -99,26 +110,23 @@ body {
     padding: 0;
   }
 
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border-color: #dcff3c;
-  }
-  
   form input[type="text"],
   form input[type="email"],
   form textarea,
   form select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-top: 1px solid #fff;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    width: 100%x;
+    /* padding: 30px 0; */
+    border: none;
     background-color: #000;
   }
   
+  input:focus,
+  textarea:focus {
+    color: #dcff3c;
+    outline: none;
+    border-bottom: 1px solid #dcff3c;
+  }
+
   form select {
     width: 100%;
     padding: 8px;
@@ -129,16 +137,21 @@ body {
   }
   
   form button {
-    background-color: #dcff3c;
-    color: #000;
-    padding: 10px 20px;
+    display: flex;
+    align-items: end;
+    background: none;
+    color: #dcff3c;
+    /* margin: 20px; */
+    padding: 30px 0;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: -1.2px;
+    justify-content: end;
   }
   
   form button:hover {
-    width: 5vw;
-    height: 5vh;
-    font-size: 1rem;
+    color: #fff;
   }

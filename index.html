@@ -24,7 +24,7 @@
   <label for="menu-icon"></label>
   <nav class="nav">
 
-    <video class="bg-menu"  loop autoplay muted src="./video/bgMenuCerto.mp4" style="pointer-events: none;">
+    <video class="bg-menu"  loop autoplay muted poster="./video/bgMenuCerto.mp4" style="pointer-events: none;">
       <source src="./video/bgMenuCerto.mp4" type="video/mp4">
     </video>
 
@@ -44,7 +44,7 @@
     <header class="flex__col">
         <div class="logo">
           <a class="logo-header" href="index.html">
-          <video class="logo-header" autoplay loop muted src="./video/logoAnimado.mp4" style="pointer-events: none;">
+          <video class="logo-header" id="meuVideo" loop muted poster="./video/logoAnimado.mp4" style="pointer-events: none;">
             <source src="./video/logoAnimado.mp4">
           </video>
         </a>
@@ -54,7 +54,7 @@
   <main>
         <section class="clip">
           <div class="clip__inner">
-            <video class="clip__bg"  loop autoplay muted src="./video/backgroundVideo.mp4" style="pointer-events: none;">
+            <video class="clip__bg"  loop muted poster="./video/backgroundVideo.mp4" style="pointer-events: none;">
               <source src="./video/backgroundVideo.mp4" type="video/mp4">
             </video>
           </div>
@@ -64,7 +64,7 @@
         <div class="linhaHome"></div>
 
         <section class="transicao">
-            <video class="esteira-verde" autoplay loop muted src="./video/esteiraHome.mp4" style="pointer-events: none;">
+            <video class="esteira-verde" loop muted poster="./video/esteiraHome.mp4" style="pointer-events: none;">
               <source src="./video/esteiraHome.mp4" type="video/mp4">
             </video>
         </section>
@@ -226,6 +226,24 @@
       <script src="./js/index.js"></script>
       <script src="./js/projeto.js"></script>
       <script src="./js/bolha.js"></script>
+
+      <script>
+         // Capturando o elemento de vídeo
+          var video = document.getElementById("meuVideo");
+          var bg = document.querySelector('.clip__bg');
+          var esteiraVerde = document.querySelector('.esteira-verde');
+          var menu = document.querySelector('.bg-menu');
+
+          // Adicionando um ouvinte de evento para quando a página for carregada
+          window.addEventListener("load", function() {
+            // Iniciar a reprodução do vídeo
+            video.play();
+            bg.play();
+            esteiraVerde.play();
+            menu.play();
+          });
+
+      </script>
      
 </body>
 </html>

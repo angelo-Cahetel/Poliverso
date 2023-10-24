@@ -209,8 +209,9 @@ section.transicao {
 }
 
 .botaoProjetos:hover {
-  color: #dcff3c;
-  border: 1px solid #dcff3c;
+  color: #000;
+  border: none;
+  background: #dcff3c;
 }
 
 .transicao {
@@ -296,8 +297,9 @@ section.transicao {
 }
 
 .botao__projetos:hover {
-  color: #dcff3c;
-  border-color: #dcff3c;
+  color: #000;
+  border: none;
+  background: #dcff3c;
 }
 
 .img-2, .img-3, .img-4 {
@@ -318,6 +320,7 @@ section.transicao {
 @media screen and (max-width:768px) {
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0;
   }
 
@@ -363,8 +366,8 @@ section.transicao {
     }
 
     .esteira-verde {
-      width: 100%;
-      height: auto;
+      width: 200%;
+      height: 600;
       top: 0;
     }
 

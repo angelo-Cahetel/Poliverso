@@ -5,7 +5,7 @@
     <link href="./img/icon.jpg" rel="shortcut icon" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CustomEase.min.js"></script>
+    <script type="module" src="./js/contato.js"></script>
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="/css/header.css">
@@ -31,7 +31,7 @@
               <section class="paginas">
                 <li><a class="menu-a" href="index.html">home</a></li>
                 <li><a class="menu-a" href="projetos.html">nossos projetos</a></li>
-                <li><a class="menu-a" href="sobre.html">cultura poliverso</a></li>
+                <li><a class="menu-a" href="sobre.html">manifesto</a></li>
                 <li><a class="menu-a" href="contato.html">fale com a gente</a></li>
               </section>
             </ul>
@@ -49,33 +49,41 @@
              <div class="linhaHeader"></div>        
          </header>
         <main>
-            
+            <div class="container3D">
+              
             <div class="container">
               <div class="contato-titulo">
                 <p class="chamadaContato">Entre em Contato</p>
                 <img class="smileContato" src="./img/smileContato.png" alt="">
               </div>
+              <div class="linhaBox"></div>
               <form id="contact-form">
-                <label for="name">nome:</label>
-                <input type="text" id="name" name="name" required>
+                <label class="label" for="name">nome:<input type="text" id="name" name="name" required></label>
+              
+                <div class="linhaForm"></div>
                 
-                <label for="email">email:</label>
-                <input type="email" id="email" name="email" required>
+                <label class="label" for="email">email:<input type="email" id="email" name="email" required></label>
                 
-                <label for="message">mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="linhaForm"></div>
                 
-                <label for="category">categoria:</label>
-                <select id="category" name="category">
-                  <option value="moda">Moda</option>
-                  <option value="institucional">Institucional</option>
-                  <option value="publicidade">Publicidade</option>
-                  <option value="gastronomia">Gastronomia</option>
-                </select>
+                <label class="label" for="message">mensagem:<textarea id="message" name="message" rows="4" required></textarea></label>
+               
                 
+                <div class="linhaForm"></div>
+
+                <label class="label" for="category">categoria:
+                  <select id="category" name="category">
+                    <option value="moda">Moda</option>
+                    <option value="institucional">Institucional</option>
+                    <option value="publicidade">Publicidade</option>
+                  </select>
+                </label>
+                
+                <div class="linhaBotao"></div>
                 <button type="submit">Enviar</button>
               </form>
-              <div id="3Dcontato"></div>
+            </div>
+            <!-- <div id="3Dcontato"></div> -->
             </div>
         </main>  
 
@@ -102,6 +110,5 @@
     </body>
         
         <script src="./js/contato.js"></script>
-        <!-- <script src="./js/index.js"></script> -->
 </body>
 </html>
